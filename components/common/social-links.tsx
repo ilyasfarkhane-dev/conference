@@ -53,7 +53,7 @@ export default SocialLinks;
 
 
 const copy_right_text = { 
-  copy_right: <>Copyright © {new Date().getFullYear()} piohost by <a href="https://themeforest.net/user/theme_pure/portfolio" target="_blank">ThemePure</a>. All Rights Reserved.</>,
+  copy_right: <>Copyright © {new Date().getFullYear()} TIM24 by <a href="https://themeforest.net/user/theme_pure/portfolio" target="_blank">FSBM</a>. All Rights Reserved.</>,
 }
 const {copy_right}  = copy_right_text
 

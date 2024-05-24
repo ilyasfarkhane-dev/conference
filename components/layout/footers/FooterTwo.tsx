@@ -20,43 +20,29 @@ const footer_content_2: footer_content_2_type  ={
     footer_data: [
         {
             id: 1,
-            title: "Our Products",
+            title: "Contactez-nous",
             links: [
-                {title: "Shared", link: "#"},
-                {title: "hosting", link: "#"},
-                {title: "WordPress", link: "#"},
-                {title: "VPS", link: "#"},
-                {title: "hosting", link: "#"},
-                {title: "Dedicated", link: "#"},
+                {title: "Faculté des sciences Ben M'Sik, Université Hassan II de Casablanca, Maroc", link: "#"},
+                {title: "tim24fsbm@gmail.com", link: "#"},
+                {title: "+212 660-082091", link: "#"},
+                
             ],
 
         },
         {
             id: 2,
-            title: "Get Support",
+            title: "Liens Pratiques",
             links: [
-                {title: "Shared", link: "#"},
-                {title: "hosting", link: "#"},
-                {title: "WordPress", link: "#"},
-                {title: "VPS", link: "#"},
-                {title: "hosting", link: "#"},
-                {title: "Dedicated", link: "#"},
+                {title: "Modèle de soumission", link: "#"},
+                {title: "Dates importantes", link: "#"},
+                {title: "Inscription", link: "#"},
+                {title: "Comités", link: "#"},
+                {title: "Sujets", link: "#"},
+               
             ],
 
         },
-        {
-            id: 3,
-            title: "Our Company",
-            links: [
-                {title: "Chat", link: "#"},
-                {title: "Tickets", link: "#"},
-                {title: "Knowledge", link: "#"},
-                {title: "base", link: "#"},
-                {title: "System", link: "#"},
-                {title: "Marketing", link: "#"},
-            ],
-
-        },
+       
     ]
 
 
@@ -76,7 +62,7 @@ const FooterTwo = () => {
                                         <div className="footer-logo">
                                             <Image src={footer_logo} alt="theme-pure" />
                                         </div>
-                                        <p>{footer_info}</p>
+                                       
                                     </div>
                                     <div className="footer-social-info">
                                         <SocialLinks />
@@ -92,7 +78,7 @@ const FooterTwo = () => {
                                         <div className="wegets-body">
                                             <ul>
                                                 {item.links.map((link, index) => 
-                                                <li key={index}><Link href={link.link}>{link.title}</Link></li>
+                                                <li key={index}>{link.title}</li>
                                                 )}
                                             </ul>
                                         </div>

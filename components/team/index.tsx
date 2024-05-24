@@ -1,5 +1,5 @@
 import Breadcrumb from "../common/breadcrumbs/breadcrumb";
-import FooterOne from "../layout/footers/FooterOne";
+import FooterTwo from "../layout/footers/FooterTwo";
 import HeaderTwo from "../layout/headers/header-2";
 import OurOfficeArea from "./OurOfficeArea";
 import TeamArea from "./TeamArea";
@@ -9,11 +9,11 @@ const Team = () => {
         <>
             <HeaderTwo style={true} />
             <main>
-                <Breadcrumb top_title="Team Member"  title="Team"  />
+                <Breadcrumb top_title="Comité de pilotage"  title="Comité"  />
                 <TeamArea />
                 <OurOfficeArea />
             </main>
-            <FooterOne />
+            <FooterTwo />
         </>
     );
 };

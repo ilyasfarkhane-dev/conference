@@ -18,17 +18,14 @@ const HeaderTwo = ({style}: style_type) => {
                             <div className="row">
                                 <div className="col-xl-6 col-lg-6 col-md-6">
                                     <div className="header-left">
-                                        <ul className="top-list">
-                                            <li> <a href="#"><i className="fal fa-comments"></i><span> Chat</span></a></li>
-                                            <li><a href="#"><i className="far fa-newspaper"></i><span> News Feeds</span></a></li>
-                                        </ul>
+                                       
                                     </div>
                                 </div>
                                 <div className="col-xl-6 col-lg-6 col-md-6">
                                     <div className="header-cta text-right">
                                         <ul className="top-list">
-                                            <li><a href="#"><i className="fal fa-envelope"></i><span> info@exampleweb.com</span></a></li>
-                                            <li className="mr-0"><a href="#"><i className="fal fa-phone"></i><span> +098 9789 867 6</span></a></li>
+                                            <li><a href="#"><i className="fal fa-envelope"></i><span> tim24fsbm@gmail.com</span></a></li>
+                                            <li className="mr-0"><a href="#"><i className="fal fa-phone"></i><span> +212 660-082091</span></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -43,9 +40,9 @@ const HeaderTwo = ({style}: style_type) => {
                             <div className="logo">
                                 <Link href="/"> 
                                 {style ?
-                                <img src="/assets/img/logo/footer-logo.png" alt="theme-pure" /> 
+                                <img src="/assets/img/logo/logo.png" alt="theme-pure" className='log' /> 
                                 :
-                                <img src="/assets/img/logo/logo.png" alt="theme-pure" />                                 
+                                <img src="/assets/img/logo/logo.png" alt="theme-pure"  className='log'  />                                 
                                 }
                                 </Link>
                             </div>
@@ -59,13 +56,11 @@ const HeaderTwo = ({style}: style_type) => {
                         </div>
                         <div className="col-xl-3 col-lg-3 col-md-7 d-flex align-items-center justify-content-end">
                             <div className="header-btn f-right d-none d-md-block">
-                                <Link href={"/register"}>
-                                    <button className="btn"><i className="far fa-user"></i> Sign In</button>                                
+                                <Link href={"#"}>
+                                    <button className="btn"><i className="far fa-user"></i> Inscription</button>                                
                                 </Link>
                             </div>
-                            <div className="bar f-right d-none d-xl-block">
-                                <button className="info-bar" onClick={() => setSidebarOppen(true)}><i className="far fa-bars"></i></button>
-                            </div>
+                            
                         </div>
                         <div className="col-12">
                             <div className="mobile-menu mean-container d-lg-none"> 

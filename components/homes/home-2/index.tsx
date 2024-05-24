@@ -10,6 +10,8 @@ import TestimonailHomeOne from "../home/TestimonailHomeOne";
 import NewsFeedHomeOne from "../home/NewsFeedHomeOne";
 import BrandHomeOne from "../home/BrandHomeOne";
 import FooterTwo from "../../layout/footers/FooterTwo";
+import FAQHomeOne from "../home/FAQHomeOne";
+import Team from '../../team/TeamArea'
 
 const HomeTwo = () => {
   return (
@@ -17,15 +19,11 @@ const HomeTwo = () => {
       <HeaderTwo style={false} />
       <main>
         <HeroHomeTwo />
-        <DomainSearchHomeTwo />
-        <CoreFeaturesHomeTwo />
-        <ServicesHomeOne />
-        <PricingHomeTwo />
-        <MakeBusinessHomeTwo />
         <ChoseAreaHomeOne />
-        <TestimonailHomeOne />
-        <NewsFeedHomeOne />
+        <FAQHomeOne />
+        <Team />
         <BrandHomeOne />
+       
       </main>
       <FooterTwo />
     </>

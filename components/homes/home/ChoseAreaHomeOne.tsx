@@ -21,25 +21,35 @@ const chose_data:chose_data_type[] = [
         active: "",
         sirial_no: "01",
         icon: chose_icon_1,
-        title: "Data Migration",
-        info: "PioHosting flexible Managed Backup Solutions will help simplify the protection of your data.",
+        title: "Début des soumissions",
+        info: "1 Juin 2024",
     },
     {
         id: 2,
-        active: "active",
+        active: "",
         sirial_no: "02",
-        icon: chose_icon_2,
-        title: "DDoS Protection",
-        info: "PioHosting flexible Managed Backup Solutions will help simplify the protection of your data.",
+        icon: chose_icon_3,
+        title: "Date limite des soumissions",
+        info: "15 Juillet 2024",
     },
     {
         id: 3,
-        active: "",
+        active: "active",
         sirial_no: "03",
-        icon: chose_icon_3,
-        title: "Data Security",
-        info: "PioHosting flexible Managed Backup Solutions will help simplify the protection of your data.",
+        icon: chose_icon_2,
+        title: "Notification des acceptations",
+        info: "15 Août 2024",
     },
+  
+    {
+        id: 4,
+        active: "",
+        sirial_no: "04",
+        icon: chose_icon_3,
+        title: "Début du congrès",
+        info: "30 Novembre 2024",
+    },
+    
 ]
 const ChoseAreaHomeOne = () => {
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -54,20 +64,20 @@ const ChoseAreaHomeOne = () => {
                     <div className="row ">
                         <div className="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
                             <div className="section-title text-center mb-70">
-                                <h2>Why Choose Us?</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <h2>Processus de Participation</h2>
+                                
                             </div>
                         </div>
                     </div>
                     <div className="row chose-row wow fadeInUp animated" data-wow-delay="0.3s">
                         {chose_data.map((item, i) => 
-                            <div key={i} className="col-xl-4 col-lg-4">
+                            <div key={i} className="col-xl-3 col-lg-3">
                                 <div className={`chose-box text-center ${activeIndex === i ? 'active' : ''} mb-30`} onMouseEnter={() => handleMouseEnter(i)}>
-                                    <Image src={item.icon} alt="theme-pure" />
+                                    
                                     <div className="chose-content">
                                         <span>{item.sirial_no}</span>
                                         <h3>{item.title}</h3>
+
                                         <p>{item.info}</p>
                                     </div>
                                 </div>
@@ -81,3 +91,5 @@ const ChoseAreaHomeOne = () => {
 };
 
 export default ChoseAreaHomeOne;
+
+
