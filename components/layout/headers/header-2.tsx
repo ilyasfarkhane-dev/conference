@@ -56,7 +56,7 @@ const HeaderTwo = ({style}: style_type) => {
                         </div>
                         <div className="col-xl-3 col-lg-3 col-md-7 d-flex align-items-center justify-content-end">
                             <div className="header-btn f-right d-none d-md-block">
-                                <Link href={"#"}>
+                                <Link href={"/inscription"}>
                                     <button className="btn"><i className="far fa-user"></i> Inscription</button>                                
                                 </Link>
                             </div>

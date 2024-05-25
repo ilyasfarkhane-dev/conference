@@ -13,45 +13,51 @@ const priceing_data:priceing_data_type[] = [
     {
         id: 1,
         best_value: false,
-        title: "Starter",
+        title: "Présentiel",
         info: "More power for complex sites and heavy traffic.",
-        price: 34, 
+        price: 150, 
         price_features: [
-            <><span>1</span>website</>,
-            <><span>30 GB</span>bandwidth</>,
-            <><span>Unmetered</span>website</>,
+            <>Certificat de participation</>,
+            <>Matériel de conférence</>,
+            <>Accès aux expositions</>,
+            <>Déjeuner et pauses thé/café</>,
+            <>Documents de la conférence</>,
+            <>Bloc-notes | Stylo</>,
+            <>Badge| Dépliant | Programme</>,
+
 
         ]
     },
     {
         id: 2,
         best_value: true,
-        title: "Economy",
+        title: "Présentiel",
         info: "More power for complex sites and heavy traffic.",
-        price: 95,
+        price: 250,
         save: 62,
         price_features: [
-            <><span>1</span>website</>,
-            <><span>30 GB</span>bandwidth</>,
-            <><span>Unmetered</span>website</>,
-            <><span>Professional Email</span>- 1-year trial</>,
-            <><span>Free domain</span>- annual plan </>,
-
+            <>Certificat de Communication</>,
+            <>Certificat de participation</>,
+            <>Matériel de conférence</>,
+            <>Accès aux expositions</>,
+            <>Déjeuner et pauses thé/café</>,
+            <>Documents de la conférence</>,
+            <>Cartable| Rapport des actes</>,
+            <>Bloc-notes | Stylo</>,
+            <>Badge| Dépliant | Programme</>,
         ]
     },
     {
         id: 3,
         best_value: false,
-        title: "Ultimate",
+        title: "A distance",
         info: "More power for complex sites and heavy traffic.",
-        price: 54,
+        price: 150,
         save: 62,
         price_features: [
-            <><span>1</span>website</>,
-            <><span>30 GB</span>bandwidth</>,
-            <><span>Unmetered</span>website</>,
-            <><span>Professional Email</span>- 1-year trial</>,
-            <><span>Free domain</span>- annual plan </>,
+            <>Certificat de Communication</>,
+            <>Certificat de participation</>,
+            <>Documents de la conférence</>,
         ]
     },
 ]

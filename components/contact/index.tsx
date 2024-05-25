@@ -1,5 +1,5 @@
 import Breadcrumb from "../common/breadcrumbs/breadcrumb";
-import FooterOne from "../layout/footers/FooterOne";
+import FooterTwo from "../layout/footers/FooterTwo";
 import HeaderTwo from "../layout/headers/header-2";
 import ContractArea from "./ContractArea";
 import ContractServices from "./ContractServices";
@@ -10,12 +10,12 @@ const Contact = () => {
     <>
       <HeaderTwo style={true} />
       <main>
-        <Breadcrumb top_title="Contact Us" title="About" />
+        <Breadcrumb top_title="Programme" title="programme" />
         <GoogleMap />
-        <ContractServices />
-        <ContractArea />
+      
+       
       </main>
-      <FooterOne />
+      <FooterTwo />
     </>
   );
 };

@@ -27,14 +27,22 @@ const menu_data:MenuItem[]  = [
   {
     id: 3,
     title: "Sujets",
-    link: "#",
+    link: "/sujets",
     has_dropdown: false,
    
   },
   
+ 
   {
     id: 4,
-    title: "Dates importantes",
+    title: "Programme",
+    link: "/programme",
+    has_dropdown: false,
+   
+  },
+  {
+    id: 5,
+    title: "Galery",
     link: "#",
     has_dropdown: false,
    

@@ -38,7 +38,7 @@ const chose_data:chose_data_type[] = [
         sirial_no: "03",
         icon: chose_icon_2,
         title: "Notification des acceptations",
-        info: "15 Août 2024",
+        info: "30 Août 2024",
     },
   
     {

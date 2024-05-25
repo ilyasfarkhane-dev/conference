@@ -1,6 +1,6 @@
 import ChoseAreaHomeOne from "../homes/home/ChoseAreaHomeOne";
 import PriceArea from "../hosting/PriceArea";
-import FooterOne from "../layout/footers/FooterOne";
+import FooterTwo from "../layout/footers/FooterTwo";
 import HeaderTwo from "../layout/headers/header-2";
 import Breadcrumb from "./../common/breadcrumbs/breadcrumb";
 import FAQArea from "./FAQArea";
@@ -11,13 +11,11 @@ const Affiliate = () => {
     <>
       <HeaderTwo style={true} />
       <main>
-        <Breadcrumb top_title="Affiliate" title="Affiliate" />
-        <ChoseAreaHomeOne />
-        <PriceArea />
-        <IntroVideoArea />
+        <Breadcrumb top_title="TIM'24" title="Sujets" />
+      
         <FAQArea />
       </main>
-      <FooterOne />
+      <FooterTwo />
     </>
   );
 };
