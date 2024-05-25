@@ -1,5 +1,5 @@
 import Breadcrumb from "../common/breadcrumbs/breadcrumb";
-import FooterOne from "../layout/footers/FooterOne";
+import FooterTwo from "../layout/footers/FooterTwo";
 import HeaderTwo from "../layout/headers/header-2";
 import LoginArea from "./LoginArea";
 
@@ -8,10 +8,10 @@ const Login = () => {
     <>
       <HeaderTwo style={true} />
       <main>
-        <Breadcrumb top_title="Login Page" title="Login" />
+        <Breadcrumb top_title="Gallery" title="Gallery" />
         <LoginArea />
       </main>
-      <FooterOne />
+      <FooterTwo />
     </>
   );
 };

@@ -34,7 +34,7 @@ const footer_content_2: footer_content_2_type  ={
             title: "Liens Pratiques",
             links: [
                 {title: "Modèle de soumission", link: "#"},
-                {title: "Galery", link: "#"},
+                {title: "Galery", link: "/gallery"},
                 {title: "Inscription", link: "/inscription"},
                 {title: "Comités", link: "/comites"},
                 {title: "Sujets", link: "/sujets"},

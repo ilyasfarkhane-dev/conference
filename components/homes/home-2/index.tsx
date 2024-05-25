@@ -4,7 +4,7 @@ import DomainSearchHomeTwo from "./DomainSearchHomeTwo";
 import CoreFeaturesHomeTwo from "./CoreFeaturesHomeTwo";
 import ServicesHomeOne from "../home/ServicesHomeOne";
 import PricingHomeTwo from "./PricingHomeTwo";
-import MakeBusinessHomeTwo from "./MakeBusinessHomeTwo";
+import Gallery from "../../login/LoginArea";
 import ChoseAreaHomeOne from "../home/ChoseAreaHomeOne";
 import TestimonailHomeOne from "../home/TestimonailHomeOne";
 import NewsFeedHomeOne from "../home/NewsFeedHomeOne";
@@ -22,8 +22,8 @@ const HomeTwo = () => {
         <ChoseAreaHomeOne />
         <FAQHomeOne />
         <Team />
+        <Gallery />
         <BrandHomeOne />
-       
       </main>
       <FooterTwo />
     </>

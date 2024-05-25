@@ -43,7 +43,7 @@ const menu_data:MenuItem[]  = [
   {
     id: 5,
     title: "Gallery",
-    link: "/galery",
+    link: "/gallery",
     has_dropdown: false,
    
   },
