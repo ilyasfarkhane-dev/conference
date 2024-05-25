@@ -3,7 +3,7 @@ import ChoseAreaHomeOne from "../homes/home/ChoseAreaHomeOne";
 import TestimonailHomeOne from "../homes/home/TestimonailHomeOne";
 import CoreFeatures from "../hosting/CoreFeatures";
 import PriceArea from "../hosting/PriceArea";
-import FooterOne from "../layout/footers/FooterOne";
+import FooterTwo from "../layout/footers/FooterTwo";
 import HeaderTwo from "../layout/headers/header-2";
 
 const ShareHosting = () => {
@@ -11,13 +11,11 @@ const ShareHosting = () => {
     <>
       <HeaderTwo style={true} />
       <main>
-        <Breadcrumb top_title="Shared Hosting" title="Shared Hosting" />
+        <Breadcrumb top_title="Gallery" title="Gallery" />
         <ChoseAreaHomeOne />
-        <PriceArea /> 
-        <CoreFeatures />
-        <TestimonailHomeOne style={true} />
+        
       </main>
-      <FooterOne />
+      <FooterTwo />
     </>
   );
 };

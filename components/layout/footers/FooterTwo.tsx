@@ -34,10 +34,10 @@ const footer_content_2: footer_content_2_type  ={
             title: "Liens Pratiques",
             links: [
                 {title: "Modèle de soumission", link: "#"},
-                {title: "Dates importantes", link: "#"},
-                {title: "Inscription", link: "#"},
-                {title: "Comités", link: "#"},
-                {title: "Sujets", link: "#"},
+                {title: "Galery", link: "#"},
+                {title: "Inscription", link: "/inscription"},
+                {title: "Comités", link: "/comites"},
+                {title: "Sujets", link: "/sujets"},
                
             ],
 
@@ -78,7 +78,7 @@ const FooterTwo = () => {
                                         <div className="wegets-body">
                                             <ul>
                                                 {item.links.map((link, index) => 
-                                                <li key={index}>{link.title}</li>
+                                                <li key={index}  ><a href={link.link}>{link.title}</a></li>
                                                 )}
                                             </ul>
                                         </div>

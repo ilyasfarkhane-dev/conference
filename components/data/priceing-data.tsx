@@ -17,13 +17,13 @@ const priceing_data:priceing_data_type[] = [
         info: "More power for complex sites and heavy traffic.",
         price: 150, 
         price_features: [
-            <>Certificat de participation</>,
-            <>Matériel de conférence</>,
-            <>Accès aux expositions</>,
-            <>Déjeuner et pauses thé/café</>,
-            <>Documents de la conférence</>,
-            <>Bloc-notes | Stylo</>,
-            <>Badge| Dépliant | Programme</>,
+            <>- Certificat de participation</>,
+            <>- Matériel de conférence</>,
+            <>- Accès aux expositions</>,
+            <>- Déjeuner et pauses thé/café</>,
+            <>- Documents de la conférence</>,
+            <>- Bloc-notes | Stylo</>,
+            <>- Badge| Dépliant | Programme</>,
 
 
         ]
@@ -36,15 +36,15 @@ const priceing_data:priceing_data_type[] = [
         price: 250,
         save: 62,
         price_features: [
-            <>Certificat de Communication</>,
-            <>Certificat de participation</>,
-            <>Matériel de conférence</>,
-            <>Accès aux expositions</>,
-            <>Déjeuner et pauses thé/café</>,
-            <>Documents de la conférence</>,
-            <>Cartable| Rapport des actes</>,
-            <>Bloc-notes | Stylo</>,
-            <>Badge| Dépliant | Programme</>,
+            <>- Certificat de Communication</>,
+            <>- Certificat de participation</>,
+            <>- Matériel de conférence</>,
+            <>- Accès aux expositions</>,
+            <>- Déjeuner et pauses thé/café</>,
+            <>- Documents de la conférence</>,
+            <>- Cartable| Rapport des actes</>,
+            <>- Bloc-notes | Stylo</>,
+            <>- Badge| Dépliant | Programme</>,
         ]
     },
     {
@@ -55,9 +55,9 @@ const priceing_data:priceing_data_type[] = [
         price: 150,
         save: 62,
         price_features: [
-            <>Certificat de Communication</>,
-            <>Certificat de participation</>,
-            <>Documents de la conférence</>,
+            <>- Certificat de Communication</>,
+            <>- Certificat de participation</>,
+            <>- Documents de la conférence</>,
         ]
     },
 ]

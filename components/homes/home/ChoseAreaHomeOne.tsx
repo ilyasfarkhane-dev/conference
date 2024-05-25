@@ -1,95 +1,92 @@
-"use client"
-import { useState } from "react";
-import Image, { StaticImageData } from "next/image";
-// chose images
-import chose_icon_1 from "../../../public/assets/img/chose/c01.png" ;
-import chose_icon_2 from "../../../public/assets/img/chose/c02.png" ;
-import chose_icon_3 from "../../../public/assets/img/chose/c03.png" ;
-// chose data type
-interface chose_data_type {
-    id: number;
-    active: string;
-    sirial_no: string;
-    icon: StaticImageData;
-    title: string;
-    info: string;
+// Gallery.tsx
+import React from 'react';
+
+
+const products = [
+  {
+    id: 1,
+    name: 'Basic Tee',
+    href: '#',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+    imageAlt: "Front of men's Basic Tee in black.",
+    price: '$35',
+    color: 'Black',
+  },
+  {
+    id: 2,
+    name: 'Basic Tee',
+    href: '#',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+    imageAlt: "Front of men's Basic Tee in black.",
+    price: '$35',
+    color: 'Black',
+  },
+  {
+    id: 3,
+    name: 'Basic Tee',
+    href: '#',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+    imageAlt: "Front of men's Basic Tee in black.",
+    price: '$35',
+    color: 'Black',
+  },
+  {
+    id: 4,
+    name: 'Basic Tee',
+    href: '#',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+    imageAlt: "Front of men's Basic Tee in black.",
+    price: '$35',
+    color: 'Black',
+  },
+  {
+    id: 5,
+    name: 'Basic Tee',
+    href: '#',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+    imageAlt: "Front of men's Basic Tee in black.",
+    price: '$35',
+    color: 'Black',
+  },
+  {
+    id: 6,
+    name: 'Basic Tee',
+    href: '#',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+    imageAlt: "Front of men's Basic Tee in black.",
+    price: '$35',
+    color: 'Black',
+  },
+  // More products...
+];
+
+export default function Gallery() {
+  return (
+    <div className="gallery-container">
+      <div className="gallery-inner">
+      <div className="space-y-4 text-center mt-8">
+          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Explore Our Gallery</h1>
+          <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
+            Discover a curated collection of stunning images that capture the beauty and diversity of our world.
+          </p>
+        </div>
+        <div className="gallery-grid">
+          {products.map((product) => (
+            <div key={product.id} className="gallery-item">
+              <div className="image-container">
+                <a href={product.href}>
+                  <img
+                    src={product.imageSrc}
+                    alt={product.imageAlt}
+                    className="product-image"
+                  />
+                </a>
+              </div>
+              
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 }
-// chose data
-const chose_data:chose_data_type[] = [
-    {
-        id: 1,
-        active: "",
-        sirial_no: "01",
-        icon: chose_icon_1,
-        title: "Début des soumissions",
-        info: "1 Juin 2024",
-    },
-    {
-        id: 2,
-        active: "",
-        sirial_no: "02",
-        icon: chose_icon_3,
-        title: "Date limite des soumissions",
-        info: "15 Juillet 2024",
-    },
-    {
-        id: 3,
-        active: "active",
-        sirial_no: "03",
-        icon: chose_icon_2,
-        title: "Notification des acceptations",
-        info: "30 Août 2024",
-    },
-  
-    {
-        id: 4,
-        active: "",
-        sirial_no: "04",
-        icon: chose_icon_3,
-        title: "Début du congrès",
-        info: "30 Novembre 2024",
-    },
-    
-]
-const ChoseAreaHomeOne = () => {
-    const [activeIndex, setActiveIndex] = useState<number | null>(null);
-    const handleMouseEnter = (index: number) => {
-      setActiveIndex(index);
-    };
-
-    return (
-        <>
-            <section className="chose-area pt-115 pb-90">
-                <div className="container">
-                    <div className="row ">
-                        <div className="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
-                            <div className="section-title text-center mb-70">
-                                <h2>Processus de Participation</h2>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row chose-row wow fadeInUp animated" data-wow-delay="0.3s">
-                        {chose_data.map((item, i) => 
-                            <div key={i} className="col-xl-3 col-lg-3">
-                                <div className={`chose-box text-center ${activeIndex === i ? 'active' : ''} mb-30`} onMouseEnter={() => handleMouseEnter(i)}>
-                                    
-                                    <div className="chose-content">
-                                        <span>{item.sirial_no}</span>
-                                        <h3>{item.title}</h3>
-
-                                        <p>{item.info}</p>
-                                    </div>
-                                </div>
-                            </div>                        
-                        )} 
-                    </div>
-                </div>
-            </section>
-        </>
-    );
-};
-
-export default ChoseAreaHomeOne;
-
-

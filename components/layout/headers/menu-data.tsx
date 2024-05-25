@@ -42,8 +42,8 @@ const menu_data:MenuItem[]  = [
   },
   {
     id: 5,
-    title: "Galery",
-    link: "#",
+    title: "Gallery",
+    link: "/galery",
     has_dropdown: false,
    
   },
