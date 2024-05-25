@@ -11,7 +11,8 @@ const GoogleMap = () => {
   };
 
   const innerContainerStyle: React.CSSProperties = {
-    width: '50%'
+    width: '50%',
+    marginTop: '100px'
   };
 
   const headingStyle: React.CSSProperties = {
