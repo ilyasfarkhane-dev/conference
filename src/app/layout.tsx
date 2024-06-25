@@ -3,6 +3,7 @@ import "../../styles/index.css";
 import { useEffect } from "react";
 import ScrollToTop from "../../components/hooks/scroll-to-top";
 import { animationCreate } from "../../components/utils/utils";
+import 'react-modal-video/css/modal-video.css';
 
 if (typeof window !== "undefined") {
   require("bootstrap/dist/js/bootstrap");
