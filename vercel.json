@@ -1,6 +1,0 @@
-{
-    "redirects": [
-      { "source": "/", "destination": "http://www.conference-tim.com", "permanent": true }
-    ]
-  }
-  
