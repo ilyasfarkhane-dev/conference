@@ -13,7 +13,7 @@ interface MenuItem {
 const menu_data: MenuItem[] = [
   {
     id: 1,
-    title: "Homeee",
+    title: "Home",
     link: "/",
     has_dropdown: false,
   },
