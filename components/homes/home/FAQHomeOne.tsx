@@ -16,10 +16,13 @@ const accordion_data: accordion_data_type[] = [
         The 7th edition of the InternationalConference on Information Technology
         and Modeling (TIM'24), organized by our TIM Laboratory at the Faculty of
         Sciences Ben M'Sick. This year's conference will be held under the theme
-        "Innovation and Trends in Computer Science and Modeling : Bridging
-        Theory, Practice, and the Power of AI" . Join us at TIM'24 to discover
-        the future of AI and digital transformation, and to be part of the
-        conversation that is shaping thenext frontier of technology.
+        <b>
+          "Innovation and Trends in Computer Science and Modeling : Bridging
+          Theory, Practice, and the Power of AI"
+        </b>{" "}
+        . Join us at TIM'24 to discover the future of AI and digital
+        transformation, and to be part of the conversation that is shaping
+        thenext frontier of technology.
       </>
     ),
     accordion_id: "One",
@@ -32,14 +35,16 @@ const accordion_data: accordion_data_type[] = [
     question: "Sujets",
     answer: (
       <ul>
-        <li>- Robotique et Automatisation</li>
-        <li>- Apprentissage Automatique et Intelligence Artificielle</li>
-        <li>- Systèmes Intelligents et Internet des Objets (IoT)</li>
-        <li>- Vision par Ordinateur et Traitement d’Images</li>
-        <li>- Ingénierie des Données et Analyse Prédictive</li>
-        <li>- Systèmes de Contrôle et Intelligence Artificielle</li>
-        <li>- Cybersécurité et Protection des Données</li>
-        <li>- Biological Modeling and Disease Prediction</li>
+        <li>- Artificial intelligence</li>
+        <li>- Machine Learning and Deep Learning</li>
+        <li>- Business Intelligence, Big Data and Data Mining</li>
+        <li>- Intelligent smart city systems</li>
+        <li>- Ontology and knowledge modeling</li>
+        <li>- Natural Language processing </li>
+        <li>- Computer Vision</li>
+        <li>- Information system security</li>
+        <li>- Blockchain & Security</li>
+        <li>- Cloud Computing</li>
       </ul>
     ),
     accordion_id: "Two",
