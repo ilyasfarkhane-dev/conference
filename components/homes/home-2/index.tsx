@@ -11,7 +11,7 @@ import NewsFeedHomeOne from "../home/NewsFeedHomeOne";
 import BrandHomeOne from "../home/BrandHomeOne";
 import FooterTwo from "../../layout/footers/FooterTwo";
 import FAQHomeOne from "../home/FAQHomeOne";
-import Team from '../../team/TeamArea'
+import Team from "../../team/TeamArea";
 
 const HomeTwo = () => {
   return (
@@ -21,7 +21,7 @@ const HomeTwo = () => {
         <HeroHomeTwo />
         <ChoseAreaHomeOne />
         <FAQHomeOne />
-        <Team />
+        {/* <Team /> */}
         <Gallery />
         <BrandHomeOne />
       </main>

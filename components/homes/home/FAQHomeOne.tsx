@@ -32,7 +32,7 @@ const accordion_data: accordion_data_type[] = [
   },
   {
     id: 2,
-    question: "Sujets",
+    question: "Topics",
     answer: (
       <ul>
         <li>- Artificial intelligence</li>
@@ -54,15 +54,14 @@ const accordion_data: accordion_data_type[] = [
   },
   {
     id: 3,
-    question: "Modèle",
+    question: "Template",
     answer: (
       <>
-        Pour vous aider à préparer votre soumission, veuillez télécharger notre
-        modèle de document de conférence ci-dessous. Ce modèle fournit des
-        directives et une structure pour la préparation de votre proposition,
-        assurant ainsi une uniformité et une cohérence dans les soumissions.
-        Veuillez consulter attentivement les instructions incluses dans le
-        modèle avant de soumettre votre proposition.
+        To help you prepare your submission, please download our conference
+        document template below. This template provides guidelines and a
+        structure for preparing your proposal, ensuring uniformity and
+        consistency in submissions. Please carefully review the instructions
+        included in the template before submitting your proposal.
       </>
     ),
     accordion_id: "Three",
