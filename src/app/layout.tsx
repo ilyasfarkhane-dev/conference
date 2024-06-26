@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>TIM'24</title>
+        <title>conference-tim</title>
 
         <link
           href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Rubik:400,500,700"
