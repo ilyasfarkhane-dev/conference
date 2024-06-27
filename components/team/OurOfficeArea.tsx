@@ -21,6 +21,30 @@ const OurOfficeArea = () => {
       name: "( ISP-Gombe-Kinshasa, Democratic Republic of the Congo)",
     },
     { title: "Pr. Soukaina Merzouk", name: "(FPS,El Jadida Morocco)" },
+    { title: "Pr. Abderrahmane Daif", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Pr. Mohamed Ait Daoud", name: "(FSBM, Casablanca Morocco)" },
+    {
+      title: "Pr. Rachida Ait Abdelouahed ",
+      name: "(FSBM, Casablanca Morocco)",
+    },
+    { title: "Pr.Mohamed Rachdi", name: "(ENSAD,Casablanca ,Morocco)" },
+  ];
+
+  const registration = [
+    { title: "Pr. Omar Zahour ", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Pr. Abdelaziz Ettaoufik ", name: "(FSBM, Casablanca Morocco)" },
+    {
+      title: "Pr. Bentaib Mouhcine",
+      name: " (FSBM, Casablanca Morocco)",
+    },
+    { title: "Pr. Nawal Sael", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Pr. Mohamed Ghazouani", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Pr. Mounir Sadiq", name: "(FSBM, Casablanca Morocco)" },
+    {
+      title: "Pr. Rachida Ait Abdelouahed ",
+      name: "(FSBM, Casablanca Morocco)",
+    },
+    { title: "Pr.Mohamed Rachdi", name: "(ENSAD,Casablanca ,Morocco)" },
   ];
 
   const professionals2 = [
@@ -205,6 +229,24 @@ const OurOfficeArea = () => {
                 >
                   <p className="mb-0">{web.title}</p>
                   <p className="mb-0">{web.name}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <h4 className="h5 fw-bold text-muted my-4">Registration Chairs </h4>
+
+        <div className="py-4">
+          <div className="container ">
+            <div className="row g-4 d-flex justify-content-center">
+              {publicite.map((publicite, index) => (
+                <div
+                  key={index}
+                  className="col-6 col-md-4 col-lg-3 d-flex flex-column align-items-center justify-content-center p-4 bg-light rounded shadow-sm"
+                >
+                  <p className="mb-0">{publicite.title}</p>
+                  <p className="mb-0">{publicite.name}</p>
                 </div>
               ))}
             </div>

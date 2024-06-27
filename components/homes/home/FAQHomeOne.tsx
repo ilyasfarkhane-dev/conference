@@ -45,6 +45,7 @@ const accordion_data: accordion_data_type[] = [
         <li>- Information system security</li>
         <li>- Blockchain & Security</li>
         <li>- Cloud Computing</li>
+        <li>- Natural language processing (NLP)</li>
       </ul>
     ),
     accordion_id: "Two",
@@ -62,6 +63,18 @@ const accordion_data: accordion_data_type[] = [
         structure for preparing your proposal, ensuring uniformity and
         consistency in submissions. Please carefully review the instructions
         included in the template before submitting your proposal.
+        <br />
+        <br />
+        English is the language of the conference and of all submissions.
+        Manuscripts should be prepared using the A4 IEEE template .
+        <br />
+        <br />
+        <a href=" https://www.ieee.org/conferences/publishing/templates.html">
+          {" "}
+          https://www.ieee.org/conferences/publishing/templates.html
+        </a>
+        <br />
+        <br />
       </>
     ),
     accordion_id: "Three",

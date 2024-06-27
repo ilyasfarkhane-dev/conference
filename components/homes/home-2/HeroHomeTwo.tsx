@@ -45,7 +45,7 @@ const HeroHomeTwo = () => {
                           </div>
                         </div>
                         <div className="col-xl-6 col-lg-6 col-md-6">
-                          <div className="single-offer pl-65 mb-30">
+                          <div className="single-offer pl-0  mb-30">
                             <h3>{offer}</h3>
                           </div>
                         </div>
