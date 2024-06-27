@@ -46,109 +46,195 @@ const OurOfficeArea = () => {
     },
     { title: "Pr.Mohamed Rachdi", name: "(ENSAD,Casablanca ,Morocco)" },
   ];
+  const publication = [
+    { title: "Pr. Moussaid Laila", name: "(ENSAM, Casablanca Morocco)" },
+    { title: "Pr. Benlahmar El Habib", name: "(FSBM, Casablanca Morocco)" },
+    {
+      title: "Pr. Marzak Abdelaziz  ",
+      name: " (FSBM, Casablanca Morocco)",
+    },
+    { title: "Pr. Omar Zahour ", name: "(FSBM, Casablanca Morocco)" },
+  ];
+  const speakers = [
+    { title: "Pr. Azouazi Mohamed ", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Pr. Benlahmar El Habib", name: "(FSBM, Casablanca Morocco)" },
+    {
+      title: "Pr. Marzak Abdelaziz  ",
+      name: " (FSBM, Casablanca Morocco)",
+    },
+    { title: "Pr.  Silkan Hassan ", name: "(FS-UNIV-CD ,El Jadida,Morocco)" },
+    { title: "Pr. Benabbou Faouzia ", name: "(FSBM, Casablanca Morocco)" },
+  ];
+
+  const local = [
+    { title: "Oumaima Hourrane", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Fatima Zahra Alaoui ", name: "(FSBM, Casablanca Morocco)" },
+    {
+      title: "Laila Eljiani ",
+      name: " (FSBM, Casablanca Morocco)",
+    },
+    { title: "El Yazid Radid ", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Adil Karim", name: "(FSBM, Casablanca Morocco)" },
+
+    { title: "Banou Zouheir", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Bouhlal Meriem ", name: "(FSBM, Casablanca Morocco)" },
+    {
+      title: "Aarika  Kawtar ",
+      name: " (FSBM, Casablanca Morocco)",
+    },
+    { title: "Hafsa Ouchraa", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Abdeljalil Elhassani ", name: "(FSBM, Casablanca Morocco)" },
+
+    { title: "ILyas Farkhane ", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Oussama Zemmnazi ", name: "(FSBM, Casablanca Morocco)" },
+  ];
 
   const professionals2 = [
-    { title: "Pr. A. EL ADRAOUI", name: "(FSBM, Casablanca)" },
-    { title: "Pr. K. HATTAF", name: "(CRMEF Casablanca)" },
-    { title: " Pr. A. LABZAI", name: "(CRMEF Essaouira)" },
-    { title: "Pr. M. IZID", name: "(FSBM, Casablanca)" },
-    { title: "Pr. H. BOUTAYEB", name: "(FSBM, Casablanca)" },
-    { title: "Pr. T. AHAJJAM", name: "(FSBM, Casablanca)" },
-    { title: "Pr. I. ELBERRAI", name: "(FSBM, Casablanca)" },
-    { title: "Pr. O. ZAKARY", name: "(FSBM, Casablanca)" },
-
-    { title: "Pr. K. ADNAOUI", name: "(FSBM, Casablanca)" },
-    { title: " Pr. M. AZOUAZI", name: "(FSBM, Casablanca)" },
-    { title: "Pr. M. AAMRI", name: "(FSBM, Casablanca)" },
-    { title: "Pr. N. ACHTAICH", name: "(FSBM, Casablanca)" },
-    { title: "Pr. O. BALATIF", name: "(FSBM, Casablanca)" },
-    { title: "Pr. N. YOUSFI", name: "(FSBM, Casablanca)" },
-    { title: "Pr. A. NAMIR", name: "(FSBM, Casablanca)" },
-
-    { title: "Pr. A. BELANGOUR", name: "(FSBM, Casablanca)" },
-    { title: " Pr. A. DAIF", name: "(FSBM, Casablanca)" },
-    { title: "Pr. T. AHAJJAM", name: "(FSBM, Casablanca)" },
+    { title: "Pr. Aamre Khalil", name: "Univ-Lorraine, France" },
+    { title: "Pr. ACHTAICH Khadija", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. ACHTAICH Naceur", name: "(FSBM-UNIVH2C, MOROCCO)" },
     {
-      title: "Pr.  A. Tridane",
-      name: "(United Arab Emirates University, Al Ain, UAE)",
+      title: "Pr. Ait Abdelouahed Rachida ",
+      name: "(FSBM-UNIVH2C, MOROCCO)",
     },
-    { title: "Pr. E. LOTFI", name: "(FSBM, Casablanca)" },
-    { title: "Pr. H. LABRIJI", name: "(FSBM, Casablanca)" },
-    { title: "Pr. M. MAGRI", name: "(FSAC, Casablanca)" },
+    { title: "Pr. Ait Daoud Mohammed", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Ahajjam Tarik", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Anass Rghioui", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. AOUHASSI Sara", name: "(ENSAD-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Ardchird Soufiane", name: "(ENCG-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Ataa Allah Fadoua", name: "(IRCAM, MOROCCO)" },
+    { title: "Pr. Azzouazi Mohamed  ", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    {
+      title: "Pr. Bahaj Mostafa",
+      name: "(ENSA, Ibn Zohr University, Agadir, Morocco)",
+    },
 
-    { title: "Pr. F. LAHMIDI", name: "(FSBM, Casablanca)" },
-    { title: "Pr. F. BENABBOU", name: "(FSBM, Casablanca)" },
-    { title: " Pr. S. BENKADDOUR", name: "(FSBM, Casablanca)" },
-    { title: "Pr. J. BOUYAGHROUMNI", name: "(FSBM, Casablanca)" },
-    { title: "Pr. M. EL AALLAOUI", name: "(FSJES ainsbaa, Casablanca)" },
-    { title: "Pr. H. EL BOUANANI", name: "(FSJES ainsbaa, Casablanca)" },
-    { title: "Pr. Y. EL FOUTAYENI", name: "(ENSA, Marrakech)" },
+    { title: "Pr. Banane Mouad", name: "(FSJES-UNIVH2C, Morocco)" },
+    { title: " Pr. Behja Hicham", name: "(ENSEM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Belangour Abdessamad", name: "(FSBM-UNIVH2C, MOROCCO)" },
 
-    { title: "Pr. M. C. EL JAI", name: "(Perpignan, France)" },
-    { title: "Pr. A. EL JAI", name: "(Perpignan, France)" },
-    { title: " Pr. M. ELHIA", name: "(FSJES ainsbaa, Casablanca)" },
-    { title: "Pr. A. EZZIANI", name: "(FSJES ainsbaa, Casablanca)" },
-    { title: "Pr. R. GUERBAZ", name: "(FSJES ainsbaa, Casablanca)" },
-    { title: "Pr. K. CHOUYEKH", name: "(EMSI, Casablanca)" },
-    { title: "Pr. H. AIT LMAHJOUB", name: "(ENSAM, Casablanca)" },
+    { title: "Pr. Ben Lahmar El Habib", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Benabbou Faouzia", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Benghazi Akhlaki Kawtar", name: "(Univ Grenade, Espagne)" },
 
-    { title: "Pr. M. ZAHID", name: "(FSS, Marrakech)" },
-    { title: "Pr. R. AIT ABDELOUAHED", name: "(FSBM, Casablanca)" },
-    { title: "Pr. L. MANIAR", name: "(FSS, Marrakech)" },
-    { title: "Pr. K. MANSOURI", name: "(ENSET, Casablanca)" },
-    { title: "Pr. M. RACHIK", name: "(FSBM, Casablanca)" },
-    { title: "Pr. Z. RACHIK", name: "(EHTP, Casablanca)" },
-    { title: "Pr. M. RANNAN", name: "(FSJES ainsbaa, Casablanca)" },
+    { title: "Pr. Benlahmar El Habib", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Bentaib Mouhcine", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Bouattane Omar", name: "(ENSAM-UNIVH2C, MOROCCO)" },
+    {
+      title: "Pr. Bouhrma Mohamed",
+      name: "(USTM Nouakchott, Mauritania)",
+    },
+    { title: "Pr. Chemlal Yman", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Daif Abderrahmane", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Dabounou Jaouad", name: "(FST-UNIVH1, MOROCCO)" },
 
-    { title: "Pr. S. SAADI", name: "(FSBM, Casablanca)" },
-    { title: "Pr. M. TALBI", name: "(FSBM, Casablanca)" },
-    { title: "Pr. A. TRAGHA", name: "(FSBM, Casablanca)" },
-    { title: "Pr. A. YAACOUBI", name: "(FSJES ainsbaa, Casablanca)" },
-    { title: "Pr. T. ZARI", name: "(FSJES ainsbaa, Casablanca)" },
-    { title: "Pr. M. ALKAMA", name: "(FSJES ain chock, Casablanca)" },
-    { title: "Pr. Y. BAALA", name: "(FSBM, Casablanca)" },
-    { title: "Pr. S. BENRHILA", name: "(FSBM, Casablanca)" },
-    { title: "Pr. L. EL YOUSSOUFI", name: "(FSBM, Casablanca)" },
-    { title: "Pr. A. AILANE", name: "(ENSA, Khouribga)" },
+    { title: "Pr. Dandache Abbas", name: "(Univ-Lorraine, France)" },
+    {
+      title: "Pr. Diakité Mohamed Lamine",
+      name: "(USTM Nouakchott, Mauritania)",
+    },
+    {
+      title: " Pr. Doukkali Sdigui Abdlaziz",
+      name: "(ENSIAS-UNIVM5, MOROCCO)",
+    },
+    { title: "Pr. Douzi Khadija", name: "(FSTM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. El Adnani Mustapha", name: "(FST-UNIVH2C, MOROCCO)" },
+    { title: "Pr. El Filali Sanaa", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    {
+      title: "Pr. EL GHOUMARI Mohammed Yassine",
+      name: "(ENCG-UNIVH2C, MOROCCO)",
+    },
 
-    { title: "Pr. S. ELOUARITI", name: "(FSBM, Casablanca)" },
-    { title: "Pr. M. LHOUS", name: "(FSAC, Casablanca)" },
-    { title: "Pr. H. EL AMRI", name: "(ENS, Casablanca)" },
-    { title: "Pr. H. BASSOU", name: "(FSBM, Casablanca)" },
-    { title: "Pr. K. ACHTAICH", name: "(FSBM, Casablanca)" },
-    { title: "Pr. B. AHARMIM", name: "(FSBM, Casablanca)" },
-    { title: "Pr. H. BENLAHMAR", name: "(FSBM, Casablanca)" },
-    { title: "Pr A. BENLANGOUR", name: "(FSBM, Casablanca)" },
-    { title: "Pr S. BENNANI", name: "(FSBM, Casablanca)" },
-    { title: "Pr K.  BOUZKOURA", name: "(ENSA, Khouribga)" },
+    { title: "Pr. Elguemmat Kamal", name: "(ENSET-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Elyounoussi Yacine", name: "(ENSA-UNIVAE, MOROCCO)" },
+    { title: "Pr. Erraissi Allae", name: "(FPSB-UNIVCD, Morocco)" },
+    { title: "Pr. Ettaoufik Abdelaziz", name: "( FSBM-UNIVH2C, MOROCCO)" },
+    {
+      title: "Pr. Fakir Mohamed",
+      name: "(Sidi Mohamed Ben Abdellah University, Fez, Morocco)",
+    },
+    { title: "Pr. Fabrice Monteiro", name: "(Univ-Lorraine, France)" },
+    { title: "Pr. Ghanimi Fadoua", name: "(ENSC-UNIVIT, MOROCCO)" },
 
-    { title: "Pr S. FILALI", name: "(FSBM, Casablanca)" },
-    { title: "Pr M. GUESSOUS", name: "(FSBM, Casablanca)" },
-    { title: "Pr M. RIHANI", name: "(FSBM, Casablanca)" },
-    { title: " Pr I. AGMOUR", name: "(FSBM, Casablanca)" },
-    { title: "Pr A. ALAMI LAAROUSSI", name: "(ENS, Martil)" },
-    { title: "Pr M. BACHRAOUI", name: "(FSBM, Casablanca)" },
-    { title: "Pr. M. KADIRI", name: "(FSJES ainsbaa, Casablanca)" },
-    { title: " Pr H. SI MHAMD", name: "(FST, Errachidia)" },
-    { title: "Dr. A. LABRIJI", name: "(FSBM, Casablanca)" },
-    { title: "Pr. A. EL BHIH", name: "(EMSI, Casablanca)" },
+    { title: "Pr. Ghazouani Mohamed", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Hain Mustapha", name: "(ENSAM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Hanoune Mostafa", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Hattaf Khalid", name: "(CRMEF of Casablanca, MOROCCO)" },
+    { title: "Pr. Imane Lmati", name: "(FST-UNIVH1, MOROCCO)" },
+    { title: "Pr. Jarir Zahi", name: "(FSS-UNIVCA, MOROCCO)" },
+    { title: "Pr. Jebbar Mustapha", name: "(EST-UNIVH2C, Morocco)" },
 
-    { title: "Pr. M. BARMAKI", name: "(FSBM, Casablanca)" },
-    { title: "Pr. M. EL OUARRACHI", name: "(FSBM, Casablanca)" },
-    { title: "Pr M. BELAM", name: "(FP, Khouribga)" },
-    { title: "Pr A. ABTA", name: "(FP, Safi)" },
-    { title: "Pr K. LOUARTITI", name: "(ENSA, Tétouan)" },
-    { title: "Pr H. LAARABI", name: "(FSBM, Casablanca)" },
-    { title: "Pr A. MARZAK", name: "(FSBM, Casablanca)" },
-    { title: "Pr. J. MOULINE", name: "(FSBM, Casablanca)" },
-    { title: "Pr S. NOUH", name: "(FSBM, Casablanca)" },
-    { title: "Pr A. OUAZZANI", name: "(FSBM, Casablanca)" },
+    { title: "Pr. Khadija Sabiri", name: "(Senior Researcher at Fraunhofer)" },
+    {
+      title: "Pr. Kikomba Kahungu Michael",
+      name: "(ISP-Gombe-Kinshasa, Democratic Republic of the Congo)",
+    },
+    {
+      title: "Pr. Lachgar Ahmed",
+      name: "(ENSIAS, Mohammed V University in Rabat, Morocco)",
+    },
+    { title: "Pr. Labriji El Houssine", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Lahby Mohamed", name: "(ENS-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Lamiae Demraoui", name: "(FEG, USMS, MOROCCO)" },
+    { title: "Pr. Mahraz Mohamed Adnane", name: "(FSDM-UNIVSMBA, MOROCCO)" },
+    { title: "Pr. Manuel Noguera Gracia", name: "(Univ Grenade, Espagne)" },
+    { title: "Pr. Mansouri Khalifa", name: "(ENSET-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Marzak Abdelaziz", name: "(FSBM-UNIVH2C, MOROCCO)" },
 
-    { title: "Pr N. SAEL", name: "(FSBM, Casablanca)" },
-    { title: "Pr. A. ABOUSSOROR", name: "(FSBM, Casablanca)" },
-    { title: "Pr. A. ABDELHAK", name: "(FS, Kénitra)" },
-    { title: "Pr. F. EL KIHEL", name: "(ENSAM, Casablanca)" },
-    { title: "Pr. I. ABOUELKHEIR", name: "(FP, Khouribga)" },
+    { title: "Pr. Mbarki Samir", name: "(FS-UNIV IBN TOFAIL, MOROCCO)" },
+    { title: "Pr. Merzouk Soukaina", name: "(FPSB-UNIVUCD, MOROCCO)" },
+    { title: "Pr. Mourchid Mohammed", name: "(FS-UNIV IBN TOFAIL, MOROCCO)" },
+    { title: "Pr. Moussaid Khalid", name: "(FSAC-UNIVH2C, MOROCCO)" },
+
+    { title: "Pr. Moutachaouik Hicham", name: "(ENSAM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Namir Abdelwahed", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    {
+      title: "Pr. Nanne Mohamedade Farouk",
+      name: "(USTM, Nouakchott, Mauritania)",
+    },
+    { title: "Pr. Nassar Mahmoud", name: "(ENSIAS-UNIVM5, MOROCCO)" },
+    { title: "Pr. Naziha Laaz", name: "(EHTP, MOROCCO)" },
+
+    {
+      title: "Pr. Nouri Anas",
+      name: "(FSK-UNIV Ibn Tofail, Kenitra, Morocco)",
+    },
+    { title: "Pr. Nouh Said", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Omary Fouzia", name: "(FSR-UNIVMD5, MOROCCO)" },
+    { title: "Pr. Ouahabi Sara", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    {
+      title: "Pr. Ouahman Abdellah",
+      name: "(FSSM, Cadi Ayyad University, Marrakech, Morocco)",
+    },
+    { title: "Pr. Ounacer Soumaya", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    {
+      title: "Pr. Qjidaa Hassan",
+      name: "( FST, Abdelmalek Essaâdi University, Tangier, Morocco)",
+    },
+    { title: "Pr. Rachdi Mohamed", name: "(ENSAD-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Riffi Jamal", name: "(FSDM-UNIVSMBA, MOROCCO)" },
+    { title: "Pr. Rochd Yassir", name: "(ENSA-UNIVH1, MOROCCO)" },
+
+    { title: "Pr. Rochd Yassir", name: "(ENSA-UNIVH1, MOROCCO)" },
+    { title: "Pr. Saadane Rachid", name: "(EHTP-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Sadiq Abdelalim", name: "(FS-UNIV IBN TOFAIL, MOROCCO)" },
+    { title: "Pr. Sadik Mounir", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Sael Nawal", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Sara Arezki", name: "(FST-UNIVH1, MOROCCO)" },
+    { title: "Pr. Sbai Hanae", name: "(FSTM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Sekhara Youssef", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Silkan Hassan", name: "(FSJ-UNIVCD, MOROCCO)" },
+    { title: "Pr. Tabii Youness", name: "(ENSIAS, UNIV-MEDV ,Rabat)" },
+
+    { title: "Pr. Tragha Abderrahim", name: "( FSBM-UNIVH2C, MOROCCO)" },
+    {
+      title: "Pr. Yousfi Abderrahim",
+      name: "(Sidi Mohamed Ben Abdellah University, Fez, Morocco)",
+    },
+    { title: "Pr. Yousfi Noura", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Zahour Omar", name: "(FSBM-UNIVH2C, MOROCCO)" },
+
+    { title: "Pr. Zellou Ahmed", name: "(ENSIAS-UNIVM5, MOROCCO)" },
   ];
 
   return (
@@ -247,6 +333,62 @@ const OurOfficeArea = () => {
                 >
                   <p className="mb-0">{publicite.title}</p>
                   <p className="mb-0">{publicite.name}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <h4 className="h5 fw-bold text-muted my-4">Publication Chairs</h4>
+
+        <div className="py-4">
+          <div className="container ">
+            <div className="row g-4 d-flex justify-content-center">
+              {publication.map((publication, index) => (
+                <div
+                  key={index}
+                  className="col-6 col-md-4 col-lg-3 d-flex flex-column align-items-center justify-content-center p-4 bg-light rounded shadow-sm"
+                >
+                  <p className="mb-0">{publication.title}</p>
+                  <p className="mb-0">{publication.name}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <h4 className="h5 fw-bold text-muted my-4">Speakers Session Chairs</h4>
+
+        <div className="py-4">
+          <div className="container ">
+            <div className="row g-4 d-flex justify-content-center">
+              {speakers.map((speakers, index) => (
+                <div
+                  key={index}
+                  className="col-6 col-md-4 col-lg-3 d-flex flex-column align-items-center justify-content-center p-4 bg-light rounded shadow-sm"
+                >
+                  <p className="mb-0">{speakers.title}</p>
+                  <p className="mb-0">{speakers.name}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <h4 className="h5 fw-bold text-muted my-4">
+          Organizing Local Committee (Juniors)
+        </h4>
+
+        <div className="py-4">
+          <div className="container ">
+            <div className="row g-4 d-flex justify-content-center">
+              {local.map((local, index) => (
+                <div
+                  key={index}
+                  className="col-6 col-md-4 col-lg-3 d-flex flex-column align-items-center justify-content-center p-4 bg-light rounded shadow-sm"
+                >
+                  <p className="mb-0">{local.title}</p>
+                  <p className="mb-0">{local.name}</p>
                 </div>
               ))}
             </div>
