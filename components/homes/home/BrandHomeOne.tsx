@@ -5,9 +5,10 @@ import Image, { StaticImageData } from "next/image";
 // brand data images
 import brand_1 from "../../../public/assets/img/brand/brand1.jpg";
 import brand_2 from "../../../public/assets/img/brand/brand2.jpg";
-import brand_3 from "../../../public/assets/img/brand/wizara.jpeg";
+import brand_3 from "../../../public/assets/img/brand/wizara.png";
 import brand_4 from "../../../public/assets/img/brand/brand4.jpg";
 import brand_5 from "../../../public/assets/img/brand/brand5.jpg";
+import brand_6 from "../../../public/assets/img/brand/tim.png";
 
 // brand data type
 interface brand_images_type {
@@ -19,11 +20,13 @@ const brand_images: brand_images_type[] = [
   { img: brand_2 },
   { img: brand_3 },
   { img: brand_4 },
+  { img: brand_6 },
   { img: brand_5 },
 
   { img: brand_1 },
   { img: brand_2 },
   { img: brand_3 },
+  { img: brand_6 },
   { img: brand_4 },
   { img: brand_5 },
 ];

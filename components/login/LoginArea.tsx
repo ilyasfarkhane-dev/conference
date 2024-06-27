@@ -26,7 +26,7 @@ const products = [
     id: 3,
     name: "Basic Tee",
     href: "#",
-    imageSrc: "/assets/img/galery/3.jpg",
+    imageSrc: "/assets/img/galery/6.jpg",
     imageAlt: "Front of men's Basic Tee in black.",
     price: "$35",
     color: "Black",
@@ -58,6 +58,24 @@ const products = [
     price: "$35",
     color: "Black",
   },
+  {
+    id: 1,
+    name: "Basic Tee",
+    href: "#",
+    imageSrc: "/assets/img/galery/1.jpg",
+    imageAlt: "Front of men's Basic Tee in black.",
+    price: "$35",
+    color: "Black",
+  },
+  {
+    id: 2,
+    name: "Basic Tee",
+    href: "#",
+    imageSrc: "/assets/img/galery/2.jpg",
+    imageAlt: "Front of men's Basic Tee in black.",
+    price: "$35",
+    color: "Black",
+  },
   // More products...
 ];
 
@@ -66,13 +84,15 @@ export default function Gallery() {
     <div className="gallery-container ">
       <div className="gallery-inner">
         <div className="space-y-4 text-center pt-90 pb-90">
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-20">
             Explore Our Gallery
           </h1>
-          {/* <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-            Discover a curated collection of stunning images that capture the
-            beauty and diversity of our world.
-          </p> */}
+          <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
+            Explorez notre galerie d'hommage dédiée aux professeurs émérites de
+            TIM'22, célébrant leurs contributions exceptionnelles et leur
+            engagement inébranlable envers l'excellence académique et la
+            recherche innovante
+          </p>
         </div>
         <div className="gallery-grid">
           {products.map((product) => (

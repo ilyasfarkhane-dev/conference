@@ -39,7 +39,7 @@ const menu_data: MenuItem[] = [
 
   {
     id: 6,
-    title: "Conferences",
+    title: "Previous Editions",
     link: "",
     has_dropdown: true,
     sub_menus: [

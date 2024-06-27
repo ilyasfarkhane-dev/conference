@@ -22,7 +22,7 @@ const chose_data: chose_data_type[] = [
     sirial_no: "01",
     icon: chose_icon_1,
     title: "Start of Submissions",
-    info: "1 July 2024",
+    info: "July 1, 2024",
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const chose_data: chose_data_type[] = [
     sirial_no: "02",
     icon: chose_icon_3,
     title: "Submission Deadline",
-    info: "15 August 2024",
+    info: "August 15, 2024",
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ const chose_data: chose_data_type[] = [
     sirial_no: "03",
     icon: chose_icon_2,
     title: "Notification of Acceptance",
-    info: "15 September 2024",
+    info: "September 15, 2024",
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ const chose_data: chose_data_type[] = [
     sirial_no: "05",
     icon: chose_icon_3,
     title: "Final Manuscript Due",
-    info: "30 September 2024",
+    info: "September 30, 2024",
   },
 
   {
@@ -55,7 +55,7 @@ const chose_data: chose_data_type[] = [
     sirial_no: "04",
     icon: chose_icon_3,
     title: "Date of the Conference",
-    info: "26-27 November 2024",
+    info: "November 26 - 27, 2024",
   },
 ];
 const ChoseAreaHomeOne = () => {
