@@ -1,13 +1,14 @@
 // Gallery.tsx
 import React from "react";
 import g1 from "../../public/assets/img/galery/g1.jpg";
+import Image from "next/image";
 
 const products = [
   {
     id: 1,
     name: "Basic Tee",
     href: "#",
-    imageSrc: "../../public/assets/img/galery/g1.jpg",
+    imageSrc: "/assets/img/galery/1.jpg",
     imageAlt: "Front of men's Basic Tee in black.",
     price: "$35",
     color: "Black",
@@ -16,8 +17,7 @@ const products = [
     id: 2,
     name: "Basic Tee",
     href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    imageSrc: "/assets/img/galery/2.jpg",
     imageAlt: "Front of men's Basic Tee in black.",
     price: "$35",
     color: "Black",
@@ -26,8 +26,7 @@ const products = [
     id: 3,
     name: "Basic Tee",
     href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    imageSrc: "/assets/img/galery/3.jpg",
     imageAlt: "Front of men's Basic Tee in black.",
     price: "$35",
     color: "Black",
@@ -36,8 +35,7 @@ const products = [
     id: 4,
     name: "Basic Tee",
     href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    imageSrc: "/assets/img/galery/4.jpg",
     imageAlt: "Front of men's Basic Tee in black.",
     price: "$35",
     color: "Black",
@@ -46,8 +44,7 @@ const products = [
     id: 5,
     name: "Basic Tee",
     href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    imageSrc: "/assets/img/galery/5.jpg",
     imageAlt: "Front of men's Basic Tee in black.",
     price: "$35",
     color: "Black",
@@ -56,8 +53,7 @@ const products = [
     id: 6,
     name: "Basic Tee",
     href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    imageSrc: "/assets/img/galery/6.jpg",
     imageAlt: "Front of men's Basic Tee in black.",
     price: "$35",
     color: "Black",
@@ -73,22 +69,22 @@ export default function Gallery() {
           <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
             Explore Our Gallery
           </h1>
-          <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
+          {/* <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
             Discover a curated collection of stunning images that capture the
             beauty and diversity of our world.
-          </p>
+          </p> */}
         </div>
         <div className="gallery-grid">
           {products.map((product) => (
             <div key={product.id} className="gallery-item">
-              <div className="image-container">
-                <a href={product.href}>
-                  <img
-                    src={product.imageSrc}
-                    alt={product.imageAlt}
-                    className="product-image"
-                  />
-                </a>
+              <div className="">
+                <Image
+                  src={product.imageSrc}
+                  alt={product.imageAlt}
+                  className="galery-im"
+                  width={300}
+                  height={300}
+                />
               </div>
             </div>
           ))}

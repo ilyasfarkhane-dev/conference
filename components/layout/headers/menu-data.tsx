@@ -19,13 +19,13 @@ const menu_data: MenuItem[] = [
   },
   {
     id: 2,
-    title: "Comité",
-    link: "/comites",
+    title: "Committee",
+    link: "/committee",
     has_dropdown: false,
   },
   {
     id: 3,
-    title: "topics",
+    title: "Topics",
     link: "/topics",
     has_dropdown: false,
   },
@@ -36,11 +36,26 @@ const menu_data: MenuItem[] = [
     link: "/programme",
     has_dropdown: false,
   },
+
   {
-    id: 5,
-    title: "Gallery",
-    link: "/gallery",
-    has_dropdown: false,
+    id: 6,
+    title: "Conferences",
+    link: "",
+    has_dropdown: true,
+    sub_menus: [
+      {
+        title: "TIM'14",
+        link: "https://sites.google.com/view/labotimfsbm/tim14?authuser=0",
+      },
+      {
+        title: "TIM'15",
+        link: "https://sites.google.com/view/labotimfsbm/tim15?authuser=0",
+      },
+      {
+        title: "TIM'16",
+        link: "https://sites.google.com/view/labotimfsbm/tim16?authuser=0",
+      },
+    ],
   },
 ];
 export default menu_data;

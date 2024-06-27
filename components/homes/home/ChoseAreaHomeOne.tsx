@@ -22,7 +22,7 @@ const chose_data: chose_data_type[] = [
     sirial_no: "01",
     icon: chose_icon_1,
     title: "Start of Submissions",
-    info: "1 Juin 2024",
+    info: "1 July 2024",
   },
   {
     id: 2,
@@ -30,24 +30,32 @@ const chose_data: chose_data_type[] = [
     sirial_no: "02",
     icon: chose_icon_3,
     title: "Submission Deadline",
-    info: "15 Juillet 2024",
+    info: "15 August 2024",
   },
   {
     id: 3,
     active: "active",
     sirial_no: "03",
     icon: chose_icon_2,
-    title: "Notification of Acceptances",
+    title: "Notification of Acceptance",
     info: "15 September 2024",
   },
-
   {
     id: 4,
     active: "",
+    sirial_no: "05",
+    icon: chose_icon_3,
+    title: "Final Manuscript Due",
+    info: "30 September 2024",
+  },
+
+  {
+    id: 5,
+    active: "",
     sirial_no: "04",
     icon: chose_icon_3,
-    title: "Start of the Conference",
-    info: "30 Novembre 2024",
+    title: "Date of the Conference",
+    info: "26-27 November 2024",
   },
 ];
 const ChoseAreaHomeOne = () => {
@@ -72,17 +80,16 @@ const ChoseAreaHomeOne = () => {
             data-wow-delay="0.3s"
           >
             {chose_data.map((item, i) => (
-              <div key={i} className="col-xl-3 col-lg-3">
+              <div key={i} className="col-xl-2 col-lg-4 col-md-6 col-sm-12">
                 <div
                   className={`chose-box text-center ${
                     activeIndex === i ? "active" : ""
-                  } mb-30`}
+                  } mb-4`}
                   onMouseEnter={() => handleMouseEnter(i)}
                 >
                   <div className="chose-content">
                     <span>{item.sirial_no}</span>
-                    <h3>{item.title}</h3>
-
+                    <h5>{item.title}</h5>
                     <p>{item.info}</p>
                   </div>
                 </div>

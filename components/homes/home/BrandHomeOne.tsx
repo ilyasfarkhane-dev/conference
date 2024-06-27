@@ -5,7 +5,7 @@ import Image, { StaticImageData } from "next/image";
 // brand data images
 import brand_1 from "../../../public/assets/img/brand/brand1.jpg";
 import brand_2 from "../../../public/assets/img/brand/brand2.jpg";
-import brand_3 from "../../../public/assets/img/brand/brand3.png";
+import brand_3 from "../../../public/assets/img/brand/wizara.jpeg";
 import brand_4 from "../../../public/assets/img/brand/brand4.jpg";
 import brand_5 from "../../../public/assets/img/brand/brand5.jpg";
 
@@ -65,7 +65,7 @@ const BrandHomeOne = ({ style }: any) => {
   const sliderRef = useRef(null);
   return (
     <>
-      <section className={`brand-area ${style && "pt-120"} pb-120`}>
+      <section className={`brand-area ${style && "pt-120"} pb-120 pt-120`}>
         <div className="container">
           <Slider {...setting} ref={sliderRef} className="row brand-active">
             {brand_images.map((item, i) => (

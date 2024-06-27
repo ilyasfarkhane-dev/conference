@@ -5,17 +5,17 @@ import OurOfficeArea from "./OurOfficeArea";
 import TeamArea from "./TeamArea";
 
 const Team = () => {
-    return (
-        <>
-            <HeaderTwo style={true} />
-            <main>
-                <Breadcrumb top_title="Comité de pilotage"  title="Comité"  />
-                <TeamArea />
-                <OurOfficeArea />
-            </main>
-            <FooterTwo />
-        </>
-    );
+  return (
+    <>
+      <HeaderTwo style={true} />
+      <main>
+        <Breadcrumb top_title="Steering Committee" title="Committee" />
+        {/* <TeamArea /> */}
+        <OurOfficeArea />
+      </main>
+      <FooterTwo />
+    </>
+  );
 };
 
 export default Team;

@@ -14,7 +14,7 @@ const hero_content: hero_content_type = {
   title:
     "TIM'24:   7th International Conference on Information Technology and Modeling . ",
   price: "Faculty of Sciences Ben M'Sik | Casablanaca - Morocco",
-  offer: "26 - 27 - November 2024",
+  offer: "26 - 27 | November 2024",
 };
 const { bg_img, sub_title, title, price, offer } = hero_content;
 
