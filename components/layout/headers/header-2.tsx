@@ -25,7 +25,8 @@ const HeaderTwo = ({ style }: style_type) => {
                       <li>
                         <a href="#">
                           <i className="fal fa-envelope"></i>
-                          <span> tim24fsbm@gmail.com</span>
+                          <span> tim24fsbm@gmail.com </span>
+                          <span>| Omar.Zahour@Univh2c.Ma</span>
                         </a>
                       </li>
                       <li className="mr-0">
