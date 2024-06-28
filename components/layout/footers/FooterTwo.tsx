@@ -66,7 +66,7 @@ const FooterTwo = () => {
                     </div>
                   </div>
                   <div className="footer-social-info">
-                    <SocialLinks />
+                    {/* <SocialLinks /> */}
                   </div>
                 </div>
               </div>
