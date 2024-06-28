@@ -43,7 +43,7 @@ const chose_data: chose_data_type[] = [
   {
     id: 4,
     active: "",
-    sirial_no: "05",
+    sirial_no: "04",
     icon: chose_icon_3,
     title: "Final Manuscript Due",
     info: "September 30, 2024",
@@ -52,7 +52,7 @@ const chose_data: chose_data_type[] = [
   {
     id: 5,
     active: "",
-    sirial_no: "04",
+    sirial_no: "05",
     icon: chose_icon_3,
     title: "Date of the Conference",
     info: "November 26 - 27, 2024",
