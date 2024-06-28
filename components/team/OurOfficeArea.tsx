@@ -321,7 +321,9 @@ const OurOfficeArea = () => {
           </div>
         </div>
 
-        <h4 className="h5 fw-bold text-muted my-4">Registration Chairs </h4>
+        <h4 className="h5 fw-bold text-muted my-4">
+          Publicity & Communication Chairs
+        </h4>
 
         <div className="py-4">
           <div className="container ">
@@ -333,6 +335,24 @@ const OurOfficeArea = () => {
                 >
                   <p className="mb-0">{publicite.title}</p>
                   <p className="mb-0">{publicite.name}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <h4 className="h5 fw-bold text-muted my-4">Registration Chairs</h4>
+
+        <div className="py-4">
+          <div className="container ">
+            <div className="row g-4 d-flex justify-content-center">
+              {registration.map((registration, index) => (
+                <div
+                  key={index}
+                  className="col-6 col-md-4 col-lg-3 d-flex flex-column align-items-center justify-content-center p-4 bg-light rounded shadow-sm"
+                >
+                  <p className="mb-0">{registration.title}</p>
+                  <p className="mb-0">{registration.name}</p>
                 </div>
               ))}
             </div>
