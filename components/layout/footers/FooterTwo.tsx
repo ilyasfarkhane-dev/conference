@@ -29,6 +29,7 @@ const footer_content_2: footer_content_2_type = {
           link: "#",
         },
         { title: "tim24fsbm@gmail.com", link: "#" },
+        { title: "omar.zahour@univh2c.ma", link: "#" },
         { title: "+212 660-082091", link: "#" },
       ],
     },

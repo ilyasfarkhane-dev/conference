@@ -2620,9 +2620,9 @@ a.btn.btn-subscriptin i {
 /* 12. Breadcrumb */
 .breadcrumb-area {
   background-position: center center;
-  background-size: cover;
-  padding-top: 300px;
-  padding-bottom: 180px;
+  height: 300px;
+  padding-top: 200px;
+  padding-bottom: 250px;
 }
 .breadcrumb-text {
   position: relative;

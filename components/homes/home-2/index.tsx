@@ -21,7 +21,7 @@ const HomeTwo = () => {
         <HeroHomeTwo />
         <ChoseAreaHomeOne />
         <FAQHomeOne />
-        {/* <Team /> */}
+        <Team />
         <Gallery />
         <BrandHomeOne />
       </main>

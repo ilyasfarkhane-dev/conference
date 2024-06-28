@@ -11,8 +11,8 @@ const Affiliate = () => {
     <>
       <HeaderTwo style={true} />
       <main>
-        <Breadcrumb top_title="TIM'24" title="Sujets" />
-      
+        <Breadcrumb top_title="Topics" title="Topics" />
+
         <FAQArea />
       </main>
       <FooterTwo />

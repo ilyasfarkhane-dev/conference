@@ -55,6 +55,10 @@ const menu_data: MenuItem[] = [
         title: "TIM'16",
         link: "https://sites.google.com/view/labotimfsbm/tim16?authuser=0",
       },
+      {
+        title: "TIM'22",
+        link: "https://easychair.org/conferences/?conf=tim24",
+      },
     ],
   },
 ];

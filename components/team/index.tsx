@@ -10,7 +10,7 @@ const Team = () => {
       <HeaderTwo style={true} />
       <main>
         <Breadcrumb top_title="Steering Committee" title="Committee" />
-        {/* <TeamArea /> */}
+        <TeamArea />
         <OurOfficeArea />
       </main>
       <FooterTwo />
