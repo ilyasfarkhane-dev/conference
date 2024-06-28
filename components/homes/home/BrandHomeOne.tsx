@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import React, { useRef } from "react";
 import Image, { StaticImageData } from "next/image";
 // brand data images
-import brand_1 from "../../../public/assets/img/brand/brand1.jpg";
+import brand_1 from "../../../public/assets/img/brand/univ.png";
 import brand_2 from "../../../public/assets/img/brand/brand2.jpg";
 import brand_3 from "../../../public/assets/img/brand/wizara.png";
 import brand_4 from "../../../public/assets/img/brand/brand4.jpg";
