@@ -40,7 +40,7 @@ const accordion_data: accordion_data_type[] = [
         <li>- Business Intelligence, Big Data and Data Mining</li>
         <li>- Intelligent smart city systems</li>
         <li>- Ontology and knowledge modeling</li>
-        <li>- Natural Language processing </li>
+
         <li>- Computer Vision</li>
         <li>- Information system security</li>
         <li>- Blockchain & Security</li>
