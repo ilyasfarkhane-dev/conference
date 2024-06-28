@@ -13,7 +13,7 @@ const hero_content: hero_content_type = {
   sub_title: "Isometric Hosting",
   title:
     "TIM'24:   7th International Conference on Information Technology and Modeling . ",
-  price: "Faculty of Sciences Ben M'Sik | Casablanaca - Morocco",
+  price: "Faculty of Sciences Ben M'Sik | Casablanca - Morocco",
   offer: "November 26 - 27, 2024",
 };
 const { bg_img, sub_title, title, price, offer } = hero_content;
