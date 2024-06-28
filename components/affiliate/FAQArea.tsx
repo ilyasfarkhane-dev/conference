@@ -78,7 +78,7 @@ const accordion_data: accordion_data_type[] = [
       <ul>
         <li>- Techniques de vision par ordinateur et de traitement d’images</li>
         <li>- Reconnaissance faciale et biométrie</li>
-        <li>Analyse mathématique</li>
+        <li>- Analyse mathématique et modélisation</li>
         <li>- Physique / Chimie</li>
         <li>- Algèbre et géométrie</li>
         <li>- Géologie / Biologie</li>
