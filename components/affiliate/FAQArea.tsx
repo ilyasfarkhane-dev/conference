@@ -15,14 +15,14 @@ interface accordion_data_type {
 const accordion_data: accordion_data_type[] = [
   {
     id: 1,
-    question: "Robotique et Automatisation",
+    question: "Robotics and Automation",
     answer: (
       <ul>
-        <li>- Applications industrielles de la robotique</li>
-        <li>- Intelligence artificielle dans la conception de robots</li>
-        <li>- Robotique collaborative et interaction homme-machine</li>
-        <li>- Robotique médicale et soins de santé</li>
-        <li>- Éthique et responsabilité dans la robotique</li>
+        <li>- Industrial applications of robotics</li>
+        <li>- Artificial intelligence in robot design</li>
+        <li>- Collaborative robotics and human-machine interaction</li>
+        <li>- Medical robotics and healthcare</li>
+        <li>- Ethics and responsibility in robotics</li>
       </ul>
     ),
     accordion_id: "One",
@@ -32,17 +32,14 @@ const accordion_data: accordion_data_type[] = [
   },
   {
     id: 2,
-    question: "Apprentissage Automatique et Intelligence Artificielle",
+    question: "Machine Learning and Artificial Intelligence",
     answer: (
       <ul>
-        <li>- Modèles et algorithmes d’apprentissage automatique</li>
-        <li>- Réseaux de neurones et deep learning</li>
-        <li>- Apprentissage par renforcement et apprentissage non supervisé</li>
-        <li>
-          - Applications de l’intelligence artificielle dans les secteurs
-          industriels
-        </li>
-        <li>- Interprétabilité et transparence des modèles d’IA</li>
+        <li>- Machine learning models and algorithms</li>
+        <li>- Neural networks and deep learning</li>
+        <li>- Reinforcement learning and unsupervised learning</li>
+        <li>- Applications of artificial intelligence in industrial sectors</li>
+        <li>- Interpretability and transparency of AI models</li>
       </ul>
     ),
     accordion_id: "Two",
@@ -52,17 +49,15 @@ const accordion_data: accordion_data_type[] = [
   },
   {
     id: 3,
-    question: "Systèmes Intelligents et Internet des Objets (IoT)",
+    question: "Intelligent Systems and Internet of Things (IoT)",
     answer: (
       <ul>
         <ul>
-          <li>- Architecture des systèmes IoT</li>
-          <li>- Traitement de données dans les systèmes IoT</li>
-          <li>- Sécurité et confidentialité dans les systèmes IoT</li>
-          <li>- Intégration de l’IA dans les systèmes IoT</li>
-          <li>
-            - Applications et cas d’utilisation des systèmes IoT intelligents
-          </li>
+          <li>- Architecture of IoT systems</li>
+          <li>- Data processing in IoT systems</li>
+          <li>- Security and privacy in IoT systems</li>
+          <li>- Integration of AI in IoT systems</li>
+          <li>- Applications and use cases of intelligent IoT systems</li>
         </ul>
       </ul>
     ),
@@ -73,10 +68,12 @@ const accordion_data: accordion_data_type[] = [
   },
   {
     id: 4,
-    question: "Théories et applications",
+    question: "Theories and Applications",
     answer: (
       <ul>
-        <li>- Analyse mathématique et modélisation</li>
+        <li>- Graph Theory and Graph Algorithms</li>
+        <li>- Computational Complexity and Optimization</li>
+        <li>- Parallel and Distributed Algorithms</li>
       </ul>
     ),
     accordion_id: "Foure",
@@ -86,17 +83,14 @@ const accordion_data: accordion_data_type[] = [
   },
   {
     id: 5,
-    question: "Ingénierie des Données et Analyse Prédictive",
+    question: "Data Engineering and Predictive Analytics",
     answer: (
       <ul>
-        <li>- Gestion des données massives et architectures Big Data</li>
-        <li>- Méthodes d’analyse de données et de visualisation</li>
-        <li>- Prédiction et modélisation des données</li>
-        <li>- Applications de l’analyse prédictive dans divers domaines</li>
-        <li>
-          - Sécurité et confidentialité des données dans l’ingénierie des
-          données
-        </li>
+        <li>- Management of massive data and Big Data architectures</li>
+        <li>- Data analysis and visualization methods</li>
+        <li>- Data prediction and modeling</li>
+        <li>- Applications of predictive analytics in various fields</li>
+        <li>- Data security and privacy in data engineering</li>
       </ul>
     ),
     accordion_id: "five",
@@ -106,22 +100,15 @@ const accordion_data: accordion_data_type[] = [
   },
   {
     id: 6,
-    question: "Systèmes de Contrôle et Intelligence Artificielle",
+    question: "Control Systems and Artificial Intelligence",
     answer: (
       <ul>
-        <li>Techniques de contrôle et de régulation automatique</li>
-        <li>Applications de l’IA dans les systèmes de contrôle industriels</li>
+        <li>- Control and automatic regulation techniques</li>
+        <li>- Applications of AI in industrial control systems</li>
+        <li>- Adaptive control and machine learning in dynamic systems</li>
+        <li>- Integration of AI in autonomous vehicle control systems</li>
         <li>
-          Contrôle adaptatif et apprentissage automatique dans les systèmes
-          dynamiques
-        </li>
-        <li>
-          Intégration de l’IA dans les systèmes de contrôle de véhicules
-          autonomes
-        </li>
-        <li>
-          Défis et perspectives de l’IA dans les systèmes de contrôle en temps
-          réel
+          - Challenges and perspectives of AI in real-time control systems
         </li>
       </ul>
     ),
@@ -132,19 +119,16 @@ const accordion_data: accordion_data_type[] = [
   },
   {
     id: 7,
-    question: "Cybersécurité et Protection des Données",
+    question: "Cybersecurity and Data Protection",
     answer: (
       <ul>
-        <li>- Techniques de détection et de prévention des cyberattaques</li>
-        <li>- Sécurité des systèmes informatiques et des réseaux</li>
-        <li>- Cryptographie et protection des données sensibles</li>
+        <li>- Techniques for detecting and preventing cyberattacks</li>
+        <li>- Security of computer systems and networks</li>
+        <li>- Cryptography and protection of sensitive data</li>
         <li>
-          - Intelligence artificielle pour la détection des menaces et l’analyse
-          de sécurité
+          - Artificial intelligence for threat detection and security analysis
         </li>
-        <li>
-          - Conformité réglementaire et gouvernance en matière de cybersécurité
-        </li>
+        <li>- Regulatory compliance and governance in cybersecurity</li>
       </ul>
     ),
     accordion_id: "seven",
@@ -154,23 +138,20 @@ const accordion_data: accordion_data_type[] = [
   },
   {
     id: 8,
-    question: "Modélisation biologique et prévision des maladies",
+    question: "Biological Modeling and Disease Forecasting",
     answer: (
       <ul>
         <li>
-          - Modèles mathématiques et informatiques pour prédire la propagation
-          des maladies
+          - Mathematical and computational models for predicting disease spread
+        </li>
+        <li>- Analysis of epidemiological data for disease forecasting</li>
+        <li>
+          - Longitudinal studies and cohort designs to understand disease
+          etiology
         </li>
         <li>
-          - Analyse des données épidémiologiques pour la prévision des maladies
-        </li>
-        <li>
-          - Études longitudinales et conceptions de cohortes pour comprendre
-          l'étiologie des maladies
-        </li>
-        <li>
-          - Mise en œuvre de programmes de vaccination et de stratégies de
-          prévention des maladies
+          - Implementation of vaccination programs and disease prevention
+          strategies
         </li>
       </ul>
     ),

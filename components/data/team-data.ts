@@ -1,8 +1,8 @@
 import { StaticImageData } from "next/image";
 import team_avatar_1 from  "../../public/assets/img/team/lhabib.jpg";
- import team_avatar_2 from  "../../public/assets/img/team/default.png";
-import team_avatar_3 from  "../../public/assets/img/team/default.png";
-// import team_avatar_4 from  "../../public/assets/img/team/team04.jpg";
+ import team_avatar_2 from  "../../public/assets/img/team/kikomba.jpg";
+import team_avatar_3 from  "../../public/assets/img/team/deboch.jpg";
+import team_avatar_4 from  "../../public/assets/img/team/anderson.jpg";
 // import team_avatar_5 from  "../../public/assets/img/team/team05.jpg";
 // import team_avatar_6 from  "../../public/assets/img/team/team06.jpg"; 
 
@@ -25,24 +25,33 @@ const team_data: team_data_type[] = [
         avatar:  team_avatar_1,
         name: "Pr El Habib Benlahmar",
         job_title: " Faculty of Sciences Ben M’Sick, Hassan II University of Casablanca,Morocco",
-        sm_info: "Professeur au département de Mathématiques et informatique à la faculté des sciences Ben M'Sik à l'Université Hassan II de Casablanca, Maroc",
+        sm_info: "Professor in the Department of Mathematics and Computer Science at the Faculty of Sciences Ben M'Sik at Hassan II University of Casablanca, Morocco.",
     },
     {
         id: 2,
         shape: team_shape,
-        avatar:  team_avatar_2,
-        name: "Speaker",
-        job_title: "---------",
-        sm_info: "Professeur associé au département de langages et systèmes informatiques de l'Université de Grenade | Espagne.",
+        avatar:  team_avatar_4,
+        name: "Anderson Rocha",
+        job_title: "Institute of Computing, University of Campinas (Unicamp), Brazil",
+        sm_info: "Full-Professor of Artificial Intelligence and Digital Forensics at the Institute of Computing, University of Campinas (Unicamp), Brazil.",
     },
     {
         id: 3,
         shape: team_shape,
-        avatar:  team_avatar_3,
-        name: "Speaker",
-        job_title: "---------",
-        sm_info: "Professeur associé au département de langages et systèmes informatiques de l'Université de Grenade | Espagne.",
+        avatar:  team_avatar_2,
+        name: "KIKOMBA KAHUNGU Michael",
+        job_title: "ISP-Gombe-Kinshasa, Democratic Republic of the Congo",
+        sm_info: "Professor at the Higher Pedagogical Institute of Gombe in the Democratic Republic of Congo .",
     },
+    {
+        id: 4,
+        shape: team_shape,
+        avatar:  team_avatar_3,
+        name: "Olivier Debauche",
+        job_title: "University of Liège (Belgium).",
+        sm_info: "Researcher at the Department of Gembloux Agro-Bio Tech of the University of Liège (Belgium).",
+    },
+   
     
 ]
 export default team_data

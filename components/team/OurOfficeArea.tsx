@@ -34,17 +34,12 @@ const OurOfficeArea = () => {
     { title: "Pr. Omar Zahour ", name: "(FSBM, Casablanca Morocco)" },
     { title: "Pr. Abdelaziz Ettaoufik ", name: "(FSBM, Casablanca Morocco)" },
     {
-      title: "Pr. Bentaib Mouhcine",
+      title: "Pr. Bentaib Mohssine",
       name: " (FSBM, Casablanca Morocco)",
     },
     { title: "Pr. Nawal Sael", name: "(FSBM, Casablanca Morocco)" },
     { title: "Pr. Mohamed Ghazouani", name: "(FSBM, Casablanca Morocco)" },
     { title: "Pr. Mounir Sadiq", name: "(FSBM, Casablanca Morocco)" },
-    {
-      title: "Pr. Rachida Ait Abdelouahed ",
-      name: "(FSBM, Casablanca Morocco)",
-    },
-    { title: "Pr.Mohamed Rachdi", name: "(ENSAD,Casablanca ,Morocco)" },
   ];
   const publication = [
     { title: "Pr. Moussaid Laila", name: "(ENSAM, Casablanca Morocco)" },
@@ -100,6 +95,7 @@ const OurOfficeArea = () => {
     { title: "Pr. Ait Daoud Mohammed", name: "(FSBM-UNIVH2C, MOROCCO)" },
     { title: "Pr. Ahajjam Tarik", name: "(FSBM-UNIVH2C, MOROCCO)" },
     { title: "Pr. Anass Rghioui", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Anderson Rocha", name: "(Unicamp, Brazil)" },
     { title: "Pr. AOUHASSI Sara", name: "(ENSAD-UNIVH2C, MOROCCO)" },
     { title: "Pr. Ardchird Soufiane", name: "(ENCG-UNIVH2C, MOROCCO)" },
     { title: "Pr. Ataa Allah Fadoua", name: "(IRCAM, MOROCCO)" },
@@ -129,6 +125,7 @@ const OurOfficeArea = () => {
     { title: "Pr. Dabounou Jaouad", name: "(FST-UNIVH1, MOROCCO)" },
 
     { title: "Pr. Dandache Abbas", name: "(Univ-Lorraine, France)" },
+    { title: "Pr. Debauche Olivier", name: "(UNIVERSITY OF LIÈGE (BELGIUM))" },
     {
       title: "Pr. Diakité Mohamed Lamine",
       name: "(USTM Nouakchott, Mauritania)",
@@ -145,8 +142,12 @@ const OurOfficeArea = () => {
       name: "(ENCG-UNIVH2C, MOROCCO)",
     },
 
-    { title: "Pr. Elguemmat Kamal", name: "(ENSET-UNIVH2C, MOROCCO)" },
-    { title: "Pr. Elyounoussi Yacine", name: "(ENSA-UNIVAE, MOROCCO)" },
+    { title: "Pr. El Guemmat Kamal", name: "(ENSET-UNIVH2C, MOROCCO)" },
+    {
+      title: "Pr. El Habouz Youssef",
+      name: "(IGDR - Institute of Genetics and Development of Rennes, Rennes University | France)",
+    },
+    { title: "Pr. El younoussi Yacine", name: "(ENSA-UNIVAE, MOROCCO)" },
     { title: "Pr. Erraissi Allae", name: "(FPSB-UNIVCD, Morocco)" },
     { title: "Pr. Ettaoufik Abdelaziz", name: "( FSBM-UNIVH2C, MOROCCO)" },
     {
@@ -165,6 +166,10 @@ const OurOfficeArea = () => {
     { title: "Pr. Jebbar Mustapha", name: "(EST-UNIVH2C, Morocco)" },
 
     { title: "Pr. Khadija Sabiri", name: "(Senior Researcher at Fraunhofer)" },
+    {
+      title: "Pr. khammal Adil",
+      name: "(AIAC Mohamed VI, Casablanca, Morocco)",
+    },
     {
       title: "Pr. Kikomba Kahungu Michael",
       name: "(ISP-Gombe-Kinshasa, Democratic Republic of the Congo)",
@@ -415,7 +420,7 @@ const OurOfficeArea = () => {
           </div>
         </div>
 
-        <h4 className="h5 fw-bold text-muted my-4">Comité scientifique</h4>
+        <h4 className="h5 fw-bold text-muted my-4">Scientific Committee</h4>
 
         <div className="py-4">
           <div className="container">

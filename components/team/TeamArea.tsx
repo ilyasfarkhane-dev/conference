@@ -10,7 +10,7 @@ const TeamArea = () => {
           <h2 className="display-5 fw-bold text-center">Speakers</h2>
         </div>
         <div className="container teamArea">
-          <div className="row">
+          <div className="row star">
             {team_data.map((item, i) => (
               <div key={i} className="col-xl-4 col-lg-4 col-md-4 ">
                 <div
@@ -26,7 +26,7 @@ const TeamArea = () => {
                   <div className="team-text">
                     <h2>{item.name}</h2>
                     <span>{item.job_title}</span>
-                    {/* <p>{item.sm_info}</p> */}
+                    <p>{item.sm_info}</p>
                     <div className="team-link">{/* <SocialLinks /> */}</div>
                   </div>
                 </div>

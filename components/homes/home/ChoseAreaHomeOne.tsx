@@ -21,7 +21,7 @@ const chose_data: chose_data_type[] = [
     active: "",
     sirial_no: "01",
     icon: chose_icon_1,
-    title: "Start of Submissions",
+    title: "Start of Submission",
     info: "July 1, 2024",
   },
   {
