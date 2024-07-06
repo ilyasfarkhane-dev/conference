@@ -81,6 +81,10 @@ const OurOfficeArea = () => {
     { title: "Abdeljalil Elhassani ", name: "(FSBM, Casablanca Morocco)" },
 
     { title: "ILyas Farkhane ", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Ibtissame Ezzahoui", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Tarsi mariame", name: "(FSBM, Casablanca Morocco)" },
+    { title: "MIHRAB FADOUA", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Mohamed Akram Lamhour", name: "(FSBM, Casablanca Morocco)" },
     { title: "Oussama Zemmnazi ", name: "(FSBM, Casablanca Morocco)" },
   ];
 
@@ -271,7 +275,7 @@ const OurOfficeArea = () => {
           </div>
         </div>
 
-        {/* <h4 className="h5 fw-bold text-muted my-4">Conference Co-Chair</h4>
+        <h4 className="h5 fw-bold text-muted my-4">Conference Co-Chair</h4>
 
         <div className="py-4">
           <div className="container ">
@@ -287,7 +291,7 @@ const OurOfficeArea = () => {
               ))}
             </div>
           </div>
-        </div> */}
+        </div>
 
         <h4 className="h5 fw-bold text-muted my-4">
           Sponsorship & Exhibits Chairs
