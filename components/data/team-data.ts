@@ -4,7 +4,7 @@ import team_avatar_1 from  "../../public/assets/img/team/lhabib.jpg";
 import team_avatar_3 from  "../../public/assets/img/team/deboch.jpg";
 import team_avatar_4 from  "../../public/assets/img/team/anderson.jpg";
 import team_avatar_5 from  "../../public/assets/img/team/angel.jpg";
-// import team_avatar_6 from  "../../public/assets/img/team/team06.jpg"; 
+import team_avatar_6 from  "../../public/assets/img/team/filali.jpg"; 
 
 
 import team_shape from  "../../public/assets/img/shape/team-shape.png";
@@ -27,6 +27,15 @@ const team_data: team_data_type[] = [
         job_title: " Faculty of Sciences Ben M’Sick, Hassan II University of Casablanca,Morocco",
         sm_info: "Professor in the Department of Mathematics and Computer Science at the Faculty of Sciences Ben M'Sik at Hassan II University of Casablanca, Morocco.",
     },
+    {
+        id: 6,
+        shape: team_shape,
+        avatar:  team_avatar_6,
+        name: "Pr. Sanaa El Filali",
+        job_title: "Faculty of Sciences Ben M’Sick, Hassan II University of Casablanca,Morocco",
+        sm_info: "Professor in the Department of Mathematics and Computer Science at the Faculty of Sciences Ben M'Sik at Hassan II University of Casablanca, Morocco.",
+    },
+   
     {
         id: 2,
         shape: team_shape,
