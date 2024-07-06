@@ -271,7 +271,7 @@ const OurOfficeArea = () => {
           </div>
         </div>
 
-        <h4 className="h5 fw-bold text-muted my-4">Conference Co-Chair</h4>
+        {/* <h4 className="h5 fw-bold text-muted my-4">Conference Co-Chair</h4>
 
         <div className="py-4">
           <div className="container ">
@@ -287,7 +287,7 @@ const OurOfficeArea = () => {
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
 
         <h4 className="h5 fw-bold text-muted my-4">
           Sponsorship & Exhibits Chairs
