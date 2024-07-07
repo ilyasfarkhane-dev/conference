@@ -73,6 +73,7 @@ const OurOfficeArea = () => {
 
     { title: "Banou Zouheir", name: "(FSBM, Casablanca Morocco)" },
     { title: "Bouhlal Meriem ", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Brahim Bella", name: "(FSBM, Casablanca Morocco)" },
     {
       title: "Aarika  Kawtar ",
       name: " (FSBM, Casablanca Morocco)",
@@ -179,6 +180,7 @@ const OurOfficeArea = () => {
       title: "Pr. Kikomba Kahungu Michael",
       name: "(ISP-Gombe-Kinshasa, Democratic Republic of the Congo)",
     },
+    { title: "Pr. Laaz Naziha", name: "(EHTP,Casablanca ,Maroc)" },
     {
       title: "Pr. Lachgar Ahmed",
       name: "(ENSIAS, Mohammed V University in Rabat, Morocco)",
