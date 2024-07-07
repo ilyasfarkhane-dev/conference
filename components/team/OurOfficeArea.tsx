@@ -24,7 +24,7 @@ const OurOfficeArea = () => {
     { title: "Pr. Abderrahmane Daif", name: "(FSBM, Casablanca Morocco)" },
     { title: "Pr. Mohamed Ait Daoud", name: "(FSBM, Casablanca Morocco)" },
     {
-      title: "Pr. Rachida Ait Abdelouahed ",
+      title: "Pr. Rachida Ait Abdelouahid ",
       name: "(FSBM, Casablanca Morocco)",
     },
     { title: "Pr.Mohamed Rachdi", name: "(ENSAD,Casablanca ,Morocco)" },
@@ -93,7 +93,7 @@ const OurOfficeArea = () => {
     { title: "Pr. ACHTAICH Khadija", name: "(FSBM-UNIVH2C, MOROCCO)" },
     { title: "Pr. ACHTAICH Naceur", name: "(FSBM-UNIVH2C, MOROCCO)" },
     {
-      title: "Pr. Ait Abdelouahed Rachida ",
+      title: "Pr. Ait Abdelouahid Rachida ",
       name: "(FSBM-UNIVH2C, MOROCCO)",
     },
     { title: "Pr. Ait Daoud Mohammed", name: "(FSBM-UNIVH2C, MOROCCO)" },
