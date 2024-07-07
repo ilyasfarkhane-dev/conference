@@ -163,6 +163,7 @@ const OurOfficeArea = () => {
 
     { title: "Pr. Ghazouani Mohamed", name: "(FSBM-UNIVH2C, MOROCCO)" },
     { title: "Pr. Hain Mustapha", name: "(ENSAM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Hammal Oussama", name: "(ENA, Marrakech ,Morocco )" },
     { title: "Pr. Hanoune Mostafa", name: "(FSBM-UNIVH2C, MOROCCO)" },
     { title: "Pr. Hattaf Khalid", name: "(CRMEF of Casablanca, MOROCCO)" },
     { title: "Pr. Imane Lmati", name: "(FST-UNIVH1, MOROCCO)" },
