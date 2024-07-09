@@ -87,6 +87,11 @@ const OurOfficeArea = () => {
     { title: "MIHRAB FADOUA", name: "(FSBM, Casablanca Morocco)" },
     { title: "Mohamed Akram Lamhour", name: "(FSBM, Casablanca Morocco)" },
     { title: "Oussama Zemmnazi ", name: "(FSBM, Casablanca Morocco)" },
+    {
+      title: "Sofia Semlali ",
+      name: "( FSK, université Ibn Tofail ,Kénitra ,Maroc)",
+    },
+    { title: "Khaddar El Mahdi", name: "(FSBM CASABLANCA ,Morocco)" },
   ];
 
   const professionals2 = [
