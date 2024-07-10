@@ -23,7 +23,7 @@ const team_data: team_data_type[] = [
         id: 1,
         shape: team_shape,
         avatar:  team_avatar_1,
-        name: "Pr. Ell Habib Benlahmar",
+        name: "Pr. El Habib Benlahmar",
         job_title: " Faculty of Sciences Ben M’Sick, Hassan II University of Casablanca,Morocco",
         sm_info: "Professor in the Department of Mathematics and Computer Science at the Faculty of Sciences Ben M'Sik at Hassan II University of Casablanca, Morocco.",
     },
