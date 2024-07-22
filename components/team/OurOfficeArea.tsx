@@ -92,7 +92,7 @@ const OurOfficeArea = () => {
       name: "( FSK, université Ibn Tofail ,Kénitra ,Maroc)",
     },
     { title: "Khaddar El Mahdi", name: "(FSBM CASABLANCA ,Morocco)" },
-    { title: "salma aimara", name: "(FSBM CASABLANCA ,Morocco)" },
+    { title: "Salma Aimara", name: "(FSBM CASABLANCA ,Morocco)" },
   ];
 
   const professionals2 = [
