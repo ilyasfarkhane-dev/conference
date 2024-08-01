@@ -147,6 +147,7 @@ const OurOfficeArea = () => {
     },
     { title: "Pr. Douzi Khadija", name: "(FSTM-UNIVH2C, MOROCCO)" },
     { title: "Pr. El Adnani Mustapha", name: "(FST-UNIVH2C, MOROCCO)" },
+    { title: "Pr. El Bahi Hassan", name: "(ENCG, UCA,Marrakech, MOROCCO)" },
     { title: "Pr. El Filali Sanaa", name: "(FSBM-UNIVH2C, MOROCCO)" },
     {
       title: "Pr. EL GHOUMARI Mohammed Yassine",
@@ -173,6 +174,7 @@ const OurOfficeArea = () => {
     { title: "Pr. Hammal Oussama", name: "(ENA, Marrakech ,Morocco )" },
     { title: "Pr. Hanoune Mostafa", name: "(FSBM-UNIVH2C, MOROCCO)" },
     { title: "Pr. Hattaf Khalid", name: "(CRMEF of Casablanca, MOROCCO)" },
+    { title: "Pr. Hmedna Brahim", name: "(ENCG, UIZ, Agadir, MOROCCO)" },
     { title: "Pr. Imane Lmati", name: "(FST-UNIVH1, MOROCCO)" },
     { title: "Pr. Jarir Zahi", name: "(FSS-UNIVCA, MOROCCO)" },
     { title: "Pr. Jebbar Mustapha", name: "(EST-UNIVH2C, Morocco)" },
@@ -230,6 +232,7 @@ const OurOfficeArea = () => {
       name: "( FST, Abdelmalek Essaâdi University, Tangier, Morocco)",
     },
     { title: "Pr. Rachdi Mohamed", name: "(ENSAD-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Rachidi Youssef", name: "(EST-Guelmim,UIZ, MOROCCO)" },
     { title: "Pr. Riffi Jamal", name: "(FSDM-UNIVSMBA, MOROCCO)" },
     { title: "Pr. Rochd Yassir", name: "(ENSA-UNIVH1, MOROCCO)" },
 
