@@ -93,6 +93,7 @@ const OurOfficeArea = () => {
     },
     { title: "Khaddar El Mahdi", name: "(FSBM CASABLANCA ,Morocco)" },
     { title: "Salma Aimara", name: "(FSBM CASABLANCA ,Morocco)" },
+    { title: "Zineb ELLAKY", name: "(FSBM CASABLANCA ,Morocco)" },
   ];
 
   const professionals2 = [
