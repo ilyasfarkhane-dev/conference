@@ -5,6 +5,7 @@ interface hero_content_type {
   bg_img: string;
   sub_title: string;
   title: string;
+  note: string;
   price: string;
   offer: string;
 }
@@ -13,10 +14,11 @@ const hero_content: hero_content_type = {
   sub_title: "Isometric Hosting",
   title:
     "TIM'24:   7th International Conference on Information Technology and Modeling . ",
+  note: "The proceedings of the TIM'24 conference will be published in Springer's CCIS series, and extended versions of selected papers will be submitted to Scopus-indexed journals.",
   price: "Faculty of Sciences Ben M'Sik | Casablanca - Morocco",
   offer: "November 26 - 27, 2024",
 };
-const { bg_img, sub_title, title, price, offer } = hero_content;
+const { bg_img, sub_title, title, note, price, offer } = hero_content;
 
 const HeroHomeTwo = () => {
   return (
@@ -34,6 +36,12 @@ const HeroHomeTwo = () => {
                     <h2 className="wow fadeInUp animated" data-wow-delay="0.6s">
                       {title}
                     </h2>
+                    <p
+                      className="text-light note-size animated text-lg"
+                      data-wow-delay="0.6s"
+                    >
+                      {note}
+                    </p>
                     <div
                       className="slider-text-offer wow fadeInUp animated"
                       data-wow-delay="0.9s"

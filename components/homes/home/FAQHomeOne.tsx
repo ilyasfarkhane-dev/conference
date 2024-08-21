@@ -69,9 +69,9 @@ const accordion_data: accordion_data_type[] = [
         Manuscripts should be prepared using the A4 IEEE template .
         <br />
         <br />
-        <a href=" https://www.ieee.org/conferences/publishing/templates.html">
+        <a href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines?srsltid=AfmBOoocS_j6gD0AN_vuh9EsYPHkx_DWNa6z4sly5fjL5F7Y5QkvlMSl">
           {" "}
-          https://www.ieee.org/conferences/publishing/templates.html
+          https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines?srsltid=AfmBOoocS...
         </a>
         <br />
         <br />

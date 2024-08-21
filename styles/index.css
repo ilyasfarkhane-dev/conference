@@ -12,6 +12,9 @@
 @import "slick-carousel/slick/slick.css";
 @import "~bootstrap/dist/css/bootstrap";
 
-
 @import "../public/assets/css/main.css";
 
+.note-size {
+  font-size: 18px;
+  font-weight: 900;
+}

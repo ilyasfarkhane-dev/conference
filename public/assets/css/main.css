@@ -1460,13 +1460,10 @@ span.price-colors {
 .single-brand img {
   margin-top: 60px;
   display: inline-block;
-  height: 100px;
-  width: 130px;
+  height: 70px;
+  width: 80px;
 }
-.brd {
-  display: flex;
-  justify-content: center;
-}
+
 .single-brand {
   text-align: center;
 }
@@ -3648,9 +3645,19 @@ a {
   row-gap: 20px;
   column-gap: 20px;
 }
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 20px;
+  column-gap: 20px;
+}
 .galery-im {
   border-radius: 8px;
 }
+/* .galery-images {
+  height: 100px;
+  width: 180px;
+} */
 
 @media (min-width: 640px) {
   .gallery-grid {

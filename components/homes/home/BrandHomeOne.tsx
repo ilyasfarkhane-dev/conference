@@ -9,6 +9,8 @@ import brand_3 from "../../../public/assets/img/brand/wizara.png";
 import brand_4 from "../../../public/assets/img/brand/brand4.jpg";
 import brand_5 from "../../../public/assets/img/brand/brand5.jpg";
 import brand_6 from "../../../public/assets/img/brand/tim.png";
+import brand_7 from "../../../public/assets/img/brand/brand7.png";
+import brand_8 from "../../../public/assets/img/brand/brand8.jpg";
 
 // brand data type
 interface brand_images_type {
@@ -22,13 +24,8 @@ const brand_images: brand_images_type[] = [
   { img: brand_4 },
   { img: brand_6 },
   { img: brand_5 },
-
-  { img: brand_1 },
-  { img: brand_2 },
-  { img: brand_3 },
-  { img: brand_6 },
-  { img: brand_4 },
-  { img: brand_5 },
+  { img: brand_7 },
+  { img: brand_8 },
 ];
 // slider setting
 const setting = {
@@ -68,17 +65,22 @@ const BrandHomeOne = ({ style }: any) => {
   const sliderRef = useRef(null);
   return (
     <>
-      <section className={`brand-area ${style && "pt-120"} pb-120 pt-120`}>
+      <section className={`brand-area ${style && "pt-120"} pb-180 pt-120`}>
         <div className="container">
-          <Slider {...setting} ref={sliderRef} className="row brand-active">
+          <div className="gallery-grid">
             {brand_images.map((item, i) => (
-              <div key={i} className="col-12 ">
-                <div className="single-brand">
-                  <Image src={item.img} alt="theme-pure" />
+              <div key={i} className="col">
+                <div className="single-brand text-center">
+                  <Image
+                    src={item.img}
+                    alt="brand"
+                    className="img-fluid"
+                    style={{ maxWidth: "100%", height: "auto" }}
+                  />
                 </div>
               </div>
             ))}
-          </Slider>
+          </div>
         </div>
       </section>
     </>
