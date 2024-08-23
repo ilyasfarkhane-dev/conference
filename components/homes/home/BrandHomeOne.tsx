@@ -11,6 +11,7 @@ import brand_5 from "../../../public/assets/img/brand/brand5.jpg";
 import brand_6 from "../../../public/assets/img/brand/tim.png";
 import brand_7 from "../../../public/assets/img/brand/brand7.png";
 import brand_8 from "../../../public/assets/img/brand/brand8.jpg";
+import brand_8 from "../../../public/assets/img/brand/brand9.png";
 
 // brand data type
 interface brand_images_type {
@@ -26,6 +27,7 @@ const brand_images: brand_images_type[] = [
   { img: brand_5 },
   { img: brand_7 },
   { img: brand_8 },
+  { img: brand_9 },
 ];
 // slider setting
 const setting = {
