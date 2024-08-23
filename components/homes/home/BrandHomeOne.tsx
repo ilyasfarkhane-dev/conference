@@ -11,7 +11,7 @@ import brand_5 from "../../../public/assets/img/brand/brand5.jpg";
 import brand_6 from "../../../public/assets/img/brand/tim.png";
 import brand_7 from "../../../public/assets/img/brand/brand7.png";
 import brand_8 from "../../../public/assets/img/brand/brand8.jpg";
-import brand_8 from "../../../public/assets/img/brand/brand9.png";
+import brand_9 from "../../../public/assets/img/brand/brand9.png";
 
 // brand data type
 interface brand_images_type {
