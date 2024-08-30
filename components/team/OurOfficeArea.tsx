@@ -84,6 +84,9 @@ const OurOfficeArea = () => {
     { title: "ILyas Farkhane ", name: "(FSBM, Casablanca Morocco)" },
     { title: "Ibtissame Ezzahoui", name: "(FSBM, Casablanca Morocco)" },
     { title: "Tarsi mariame", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Amine Dehbi ", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Younes Rachdi ", name: "(FSBM, Casablanca Morocco)" },
+
     { title: "MIHRAB FADOUA", name: "(FSBM, Casablanca Morocco)" },
     { title: "Mohamed Akram Lamhour", name: "(FSBM, Casablanca Morocco)" },
     { title: "Oussama Zemmnazi ", name: "(FSBM, Casablanca Morocco)" },
