@@ -71,6 +71,8 @@ const OurOfficeArea = () => {
     },
     { title: "El Yazid Radid ", name: "(FSBM, Casablanca Morocco)" },
     { title: "Adil Karim", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Safeh nisrine", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Aitlmoudden Othmane", name: "(FSBM, Casablanca Morocco)" },
 
     { title: "Banou Zouheir", name: "(FSBM, Casablanca Morocco)" },
     { title: "Bouhlal Meriem ", name: "(FSBM, Casablanca Morocco)" },
@@ -174,10 +176,19 @@ const OurOfficeArea = () => {
     { title: "Pr. Ghanimi Fadoua", name: "(ENSC-UNIVIT, MOROCCO)" },
 
     { title: "Pr. Ghazouani Mohamed", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    {
+      title: "Pr. Gueye Mamadou Lamine",
+      name: "(University De Pau Et Des Pays De L'adour. France)",
+    },
     { title: "Pr. Hain Mustapha", name: "(ENSAM-UNIVH2C, MOROCCO)" },
     { title: "Pr. Hammal Oussama", name: "(ENA, Marrakech ,Morocco )" },
     { title: "Pr. Hanoune Mostafa", name: "(FSBM-UNIVH2C, MOROCCO)" },
     { title: "Pr. Hattaf Khalid", name: "(CRMEF of Casablanca, MOROCCO)" },
+
+    {
+      title: "Pr. Hicham GUEDDAH",
+      name: "(ENS, Mohammed V university, Rabat, MOROCCO)",
+    },
     { title: "Pr. Hmedna Brahim", name: "(ENCG, UIZ, Agadir, MOROCCO)" },
     { title: "Pr. Imane Lmati", name: "(FST-UNIVH1, MOROCCO)" },
     { title: "Pr. Jarir Zahi", name: "(FSS-UNIVCA, MOROCCO)" },
@@ -250,6 +261,7 @@ const OurOfficeArea = () => {
     { title: "Pr. Sekhara Youssef", name: "(FSBM-UNIVH2C, MOROCCO)" },
     { title: "Pr. Silkan Hassan", name: "(FSJ-UNIVCD, MOROCCO)" },
     { title: "Pr. Tabii Youness", name: "(ENSIAS, UNIV-MEDV ,Rabat)" },
+    { title: "Pr. Tarik Chafik", name: "(FSBM-UNIVH2C, MOROCCO)" },
 
     { title: "Pr. Tragha Abderrahim", name: "( FSBM-UNIVH2C, MOROCCO)" },
     {
