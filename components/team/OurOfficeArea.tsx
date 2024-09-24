@@ -82,7 +82,6 @@ const OurOfficeArea = () => {
     { title: "Hafsa Ouchraa", name: "(FSBM, Casablanca Morocco)" },
     { title: "Abdeljalil Elhassani ", name: "(FSBM, Casablanca Morocco)" },
 
-    
     { title: "Ibtissame Ezzahoui", name: "(FSBM, Casablanca Morocco)" },
     { title: "Tarsi mariame", name: "(FSBM, Casablanca Morocco)" },
     { title: "Amine Dehbi ", name: "(FSBM, Casablanca Morocco)" },
