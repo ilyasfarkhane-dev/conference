@@ -30,7 +30,7 @@ const chose_data: chose_data_type[] = [
     sirial_no: "02",
     icon: chose_icon_3,
     title: "Submission Deadline",
-    info: "september 15, 2024",
+    info: "september 30, 2024",
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ const chose_data: chose_data_type[] = [
     sirial_no: "03",
     icon: chose_icon_2,
     title: "Notification of Acceptance",
-    info: "September 30, 2024",
+    info: "October  15, 2024",
   },
   {
     id: 4,
