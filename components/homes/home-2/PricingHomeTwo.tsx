@@ -16,7 +16,7 @@ const PricingHomeTwo = () => {
     <>
       <section className="pricing-area gray-bg pt-115 pb-120">
         <div className="container">
-          <div className="row ">
+          <div className="row">
             <div className="col-xl-6 offset-xl-3">
               <div className="section-title text-center mb-70">
                 <h3>{sub_title}</h3>
@@ -24,11 +24,11 @@ const PricingHomeTwo = () => {
               </div>
             </div>
           </div>
-          <div className="row">
+          <div className="row justify-content-center">
             {priceing_data.map((item, i) => (
-              <div key={i} className="col-xl-4 col-lg-4">
+              <div key={i} className="col-xl-4 col-lg-4 d-flex">
                 <div
-                  className="pricing-wrapper pricing-info white-bg  mb-30 wow fadeInUp"
+                  className="pricing-wrapper pricing-info white-bg mb-30 wow fadeInUp text-center w-100 d-flex flex-column"
                   data-wow-delay="0.5s"
                 >
                   <div className="pricing-header mb-20">
@@ -51,13 +51,16 @@ const PricingHomeTwo = () => {
                       ))}
                     </ul>
                   </div>
-                  <div className="price-btn-w">
-                    <Link
-                      href="https://easychair.org/conferences/?conf=tim24 "
-                      className="btn btn-soft-border"
-                    >
-                      Inscription
-                    </Link>
+                  {/* Button aligned to the bottom */}
+                  <div className="mt-auto">
+                    <div className="price-btn-w">
+                      <Link
+                        href="https://easychair.org/conferences/?conf=tim24"
+                        className="btn btn-soft-border"
+                      >
+                        Inscription
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
