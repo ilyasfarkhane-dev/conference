@@ -9,28 +9,28 @@ interface priceing_data_type {
 }
 
 const priceing_data: priceing_data_type[] = [
-  {
-    id: 1,
-    best_value: false,
-    title: "In-person",
-    info: "More power for complex sites and heavy traffic.",
-    price: 150,
-    price_features: [
-      <>- Certificate of Participation</>,
-      <>- Conference Materials</>,
-      <>- Access to Exhibitions</>,
-      <>- Lunch and Tea/Coffee Breaks</>,
-      <>- Conference Documents</>,
-      <>- Notebook | Pen</>,
-      <>- Badge | Brochure | Program</>,
-    ],
-  },
+  // {
+  //   id: 1,
+  //   best_value: false,
+  //   title: "In-person",
+  //   info: "More power for complex sites and heavy traffic.",
+  //   price: 150,
+  //   price_features: [
+  //     <>- Certificate of Participation</>,
+  //     <>- Conference Materials</>,
+  //     <>- Access to Exhibitions</>,
+  //     <>- Lunch and Tea/Coffee Breaks</>,
+  //     <>- Conference Documents</>,
+  //     <>- Notebook | Pen</>,
+  //     <>- Badge | Brochure | Program</>,
+  //   ],
+  // },
   {
     id: 2,
     best_value: true,
     title: "In-person",
     info: "More power for complex sites and heavy traffic.",
-    price: 250,
+    price: 300,
     save: 62,
     price_features: [
       <>- Communication Certificate</>,
