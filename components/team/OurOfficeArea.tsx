@@ -261,7 +261,7 @@ const OurOfficeArea = () => {
     { title: "Pr. Sekhara Youssef", name: "(FSBM-UNIVH2C, MOROCCO)" },
     { title: "Pr. Silkan Hassan", name: "(FSJ-UNIVCD, MOROCCO)" },
     { title: "Pr. Tabii Youness", name: "(ENSIAS, UNIV-MEDV ,Rabat)" },
-    { title: "Pr. Tarik Chafik", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Tarik CHAFIQ", name: "(FSBM-UNIVH2C, MOROCCO)" },
 
     { title: "Pr. Tragha Abderrahim", name: "( FSBM-UNIVH2C, MOROCCO)" },
     {
