@@ -12,7 +12,10 @@ const OurOfficeArea = () => {
     { title: "Pr. Zahour Omar ", name: "(FSBM, Casablanca Morocco)" },
     { title: "Pr. Ouahabi Sara", name: "(FSBM, Casablanca Morocco)" },
     { title: "Pr. Ounacer  Soumaya", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Pr. Ballaoui Hammad", name: "(ISPITS, Laayoune Morocco)" },
+   
   ];
+ 
   const publicite = [
     { title: "Pr. Sanaa El Filali", name: "(FSBM, Casablanca Morocco)" },
     { title: "Pr. Soumaya Ounacer ", name: "(FSBM, Casablanca Morocco)" },
@@ -273,6 +276,8 @@ const OurOfficeArea = () => {
 
     { title: "Pr. Zellou Ahmed", name: "(ENSIAS-UNIVM5, MOROCCO)" },
   ];
+
+
 
   return (
     <div className="bg-white py-5 mt-5">
