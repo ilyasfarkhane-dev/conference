@@ -10,9 +10,9 @@ const TeamArea = () => {
           <h2 className="display-5 fw-bold text-center">Speakers</h2>
         </div>
         <div className="container teamArea">
-          <div className="row star">
+          <div className="row star justify-content-center ">
             {team_data.map((item, i) => (
-              <div key={i} className="col-xl-4 col-lg-4 col-md-4 ">
+              <div key={i} className="col-xl-4 col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
                 <div
                   className="our-team-wrapper mb-30 wow fadeInUp"
                   data-wow-delay=".9s"

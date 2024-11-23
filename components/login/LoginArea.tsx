@@ -117,7 +117,7 @@ const products = [
 
 export default function Gallery() {
   return (
-    <div className="gallery-container ">
+    <div className="gallery-container container">
       <div className="gallery-inner">
         <div className="space-y-4 text-center pt-90 pb-90">
           <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-20">
@@ -132,7 +132,7 @@ export default function Gallery() {
         </div>
         <div className="gallery-grid">
           {products.map((product) => (
-            <div key={product.id} className="gallery-item">
+            <div key={product.id} className="gallery-item d-flex justify-content-center">
               <div className="">
                 <Image
                   src={product.imageSrc}

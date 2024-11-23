@@ -11,7 +11,9 @@ const Contact = () => {
       <HeaderTwo style={true} />
       <main>
         <Breadcrumb top_title="Programme" title="programme" />
-        <GoogleMap />
+        <GoogleMap
+          
+        />
       
        
       </main>
