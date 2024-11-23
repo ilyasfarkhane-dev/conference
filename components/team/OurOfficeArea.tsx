@@ -12,7 +12,7 @@ const OurOfficeArea = () => {
     { title: "Pr. Zahour Omar ", name: "(FSBM, Casablanca Morocco)" },
     { title: "Pr. Ouahabi Sara", name: "(FSBM, Casablanca Morocco)" },
     { title: "Pr. Ounacer  Soumaya", name: "(FSBM, Casablanca Morocco)" },
-    { title: "Pr. Ballaoui Hammad", name: "(ISPITS, Laayoune Morocco)" },
+    
    
   ];
  
@@ -126,10 +126,11 @@ const OurOfficeArea = () => {
     },
 
     { title: "Pr. Banane Mouad", name: "(FSJES-UNIVH2C, Morocco)" },
+    { title: "Pr. Ballaoui Hammad", name: "(ISPITS, Laayoune Morocco)" },
     { title: " Pr. Behja Hicham", name: "(ENSEM-UNIVH2C, MOROCCO)" },
     { title: "Pr. Belangour Abdessamad", name: "(FSBM-UNIVH2C, MOROCCO)" },
 
-    { title: "Pr. Ben Lahmar El Habib", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    
     { title: "Pr. Benabbou Faouzia", name: "(FSBM-UNIVH2C, MOROCCO)" },
     { title: "Pr. Benghazi Akhlaki Kawtar", name: "(Univ Grenade, Espagne)" },
 
