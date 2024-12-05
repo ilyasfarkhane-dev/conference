@@ -15,6 +15,58 @@ const OurOfficeArea = () => {
     
    
   ];
+
+  const seniorLocal = [
+    { title: "PR. OMAR ZAHOUR", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. SARA OUAHABI", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. SOUMAYA OUNACER", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. MARZAK ABDELAZIZ", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. KIKOMBA KAHUNGU MICHAEL", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. SOUKAINA MERZOUK", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. ABDERRAHMANE DAIF", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. MOHAMED AIT DAOUD", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. RACHIDA AIT ABDELOUAHID", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. MOHAMED RACHDI", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. ABDELAZIZ ETTAOUFIK", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. MOHSSINE BENTAIB", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. NAWAL SAEL", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. MOHAMED GHAZOUANI", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. MOUNIR SADIQ", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. LAILA MOUSSAID", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. EL HABIB BENLAHMAR", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. MOHAMED AZZOUAZI", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. HASSAN SILKAN", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. FAOUZIA BENABBOU", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. MUSTAPHA KHIATI", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. OUSSAMA HAMAL", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. JAOUAD DABOUNOU", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. JAMAL OUFKIR", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. NABIL AHARRANE", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. TARIK AHAJJAM", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. YOUSSEF SEKHARA", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. KHALID KANDALI", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. ICHRAK SAIF", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. SANAA EL FILALI", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. KHADIJA ACHTAICH", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. ANASS RGHIOUI", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. ABDESSAMAD BELANGOUR", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. YMAN CHEMLAL", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. SOUFIANE ARDCHIRD", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. SARA AOUHASSI", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. KHALIL AAMRE", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. FADOUA GHANIMI", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. MOSTAFA HANOUNE", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. KHADIJA SABIRI", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. EL HOUSSINE LABRIJI", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. ABDELWAHED NAMIR", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. SAID NOUH", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. TARIK CHAFIQ", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. TRAGHA ABDERRAHIM", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. NOURA YOUSFI", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. ANASS NOURI", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. YOUNESS TABII", name: "(FSBM-UNIVH2C, MOROCCO)" }
+  ];
+  
  
   const publicite = [
     { title: "Pr. Sanaa El Filali", name: "(FSBM, Casablanca Morocco)" },
@@ -438,7 +490,26 @@ const OurOfficeArea = () => {
           </div>
         </div>
 
-        <h4 className="h5 fw-bold text-muted my-4">
+
+        <h4 className="h5 fw-bold text-muted my-4">Organizing Local Committee (Senior)</h4>
+
+<div className="py-4">
+  <div className="container">
+    <div className="row g-4 d-flex justify-content-center">
+      {seniorLocal.map((senior, index) => (
+        <div
+          key={index}
+          className="col-6 col-md-4 col-lg-3 d-flex flex-column align-items-center justify-content-center p-4 bg-light rounded shadow-sm"
+        >
+          <p className="mb-0">{senior.title}</p>
+          <p className="mb-0">{senior.name}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
+<h4 className="h5 fw-bold text-muted my-4">
           Organizing Local Committee (Juniors)
         </h4>
 
@@ -457,6 +528,7 @@ const OurOfficeArea = () => {
             </div>
           </div>
         </div>
+
 
         <h4 className="h5 fw-bold text-muted my-4">Scientific Committee</h4>
 
