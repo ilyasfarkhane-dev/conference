@@ -6,7 +6,7 @@ interface priceing_content_type {
   sub_title: string;
 }
 const priceing_content: priceing_content_type = {
-  title: "TIM'24 – Faculty of sciences Ben M’Sick, Morocco - Casablanca",
+  title: "ICTIM'24 – Faculty of sciences Ben M’Sick, Morocco - Casablanca",
   sub_title: "Reserve your spot now",
 };
 const { title, sub_title } = priceing_content;
