@@ -13,7 +13,7 @@ const hero_content: hero_content_type = {
   bg_img: "/assets/img/slider/serviebg.jpg",  
   sub_title: "Isometric Hosting",  
   title:  
-    "TIM'24:   7th International Conference on Information Technology and Modeling.",  
+    "ICTIM'24:   7th International Conference on Information Technology and Modeling.",  
   note: "The proceedings of the TIM'24 conference will be published in Springer's CCIS series, and extended versions of selected papers will be submitted to Scopus-indexed journals.",  
   price: "Faculty of Sciences Ben M'Sik | Casablanca - Morocco",  
   offer: "November 26 - 27, 2024",  

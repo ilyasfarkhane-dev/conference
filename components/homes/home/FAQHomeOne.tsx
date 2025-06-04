@@ -14,13 +14,13 @@ const accordion_data: accordion_data_type[] = [
     answer: (
       <>
         The 7th edition of the InternationalConference on Information Technology
-        and Modeling (TIM'24), organized by our TIM Laboratory at the Faculty of
+        and Modeling (ICTIM'24), organized by our TIM Laboratory at the Faculty of
         Sciences Ben M'Sick. This year's conference will be held under the theme
         <b>
           "Innovation and Trends in Computer Science and Modeling : Bridging
           Theory, Practice, and the Power of AI"
         </b>{" "}
-        . Join us at TIM'24 to discover the future of AI and digital
+        . Join us at ICTIM'24 to discover the future of AI and digital
         transformation, and to be part of the conversation that is shaping
         thenext frontier of technology.
       </>

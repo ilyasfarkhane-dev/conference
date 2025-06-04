@@ -1,6 +1,6 @@
 {
     "settings": {
-        "siteName": "TIM'24",
+        "siteName": "ICTIM'24",
         "formspreeURL": "https://formspree.io/f/your_api_key",
         "mailchimp": {
             "url": "",

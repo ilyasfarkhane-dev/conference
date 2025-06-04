@@ -45,7 +45,7 @@ export default SocialLinks;
 const copy_right_text = {
   copy_right: (
     <>
-      Copyright © {new Date().getFullYear()} TIM24 by{" "}
+      Copyright © {new Date().getFullYear()} ICTIM'24 by{" "}
       <a href="#" target="_blank">
         LTIM
       </a>
