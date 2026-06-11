@@ -1,11 +1,13 @@
-import Affiliate from "../../../components/affiliate";
+import { TopicsPage } from "../../../components/topics";
+import FooterTwo from "../../../components/layout/footers/FooterTwo";
 
-const index = () => {
+const Topics = () => {
   return (
     <>
-      <Affiliate />
+      <TopicsPage />
+      <FooterTwo />
     </>
   );
 };
 
-export default index;
+export default Topics;

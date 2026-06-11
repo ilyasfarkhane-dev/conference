@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import SocialLinks from '../../common/social-links';
 import Image from 'next/image';
-import footer_logo from "../../../public/assets/img/logo/logo.png";
+import footer_logo from "../../../public/assets/img/logo/logo tim.png";
 
 interface footer_links_type {
     id: number;
@@ -111,7 +111,11 @@ const FooterOne = () => {
                                 <div className="footer-bottom-area">
                                     <div className="widgets">
                                         <div className="footer-logo">
-                                            <Image src={footer_logo} alt="theme-pure" />
+                                            <Image
+                                                src={footer_logo}
+                                                alt="ICTIM'26 — International Conference on Information Technology and Modeling"
+                                                className="!h-28 !w-auto sm:!h-32"
+                                            />
                                         </div>
                                         <p>{info_us}</p>
                                         <ul className="adress">

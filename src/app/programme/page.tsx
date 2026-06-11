@@ -1,11 +1,13 @@
-import Contact from "../../../components/contact";
+import { ProgrammePage } from "../../../components/programme";
+import FooterTwo from "../../../components/layout/footers/FooterTwo";
 
-const index = () => {
+const Programme = () => {
   return (
     <>
-      <Contact />
+      <ProgrammePage />
+      <FooterTwo />
     </>
   );
 };
 
-export default index;
+export default Programme;

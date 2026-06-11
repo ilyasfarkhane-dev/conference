@@ -1,15 +1,12 @@
 import Breadcrumb from "../common/breadcrumbs/breadcrumb";
 import FooterTwo from "../layout/footers/FooterTwo";
-import HeaderTwo from "../layout/headers/header-2";
-import LoginArea from "./LoginArea";
+import { GallerySection } from "../gallery";
 
 const Login = () => {
   return (
-    <>
-      <HeaderTwo style={true} />
-      <main>
+    <>      <main>
         <Breadcrumb top_title="Gallery" title="Gallery" />
-        <LoginArea />
+        <GallerySection showArchiveCta={false} />
       </main>
       <FooterTwo />
     </>

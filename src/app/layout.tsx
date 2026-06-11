@@ -1,6 +1,7 @@
 "use client";
 import "../../styles/index.css";
 import { useEffect } from "react";
+import LayoutShell from "../../components/layout/LayoutShell";
 import ScrollToTop from "../../components/hooks/scroll-to-top";
 import { animationCreate } from "../../components/utils/utils";
 import "react-modal-video/css/modal-video.css";
@@ -25,15 +26,18 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>{AppData.settings.siteName}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+        />
         <link rel="icon" href="/favicon1.png" sizes="any" />
         <link
-          href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Rubik:400,500,700"
+          href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=Exo:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
       </head>
       <body>
-        {children}
+        <LayoutShell>{children}</LayoutShell>
         <ScrollToTop />
       </body>
     </html>

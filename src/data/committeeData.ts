@@ -1,0 +1,404 @@
+import type { StaticImageData } from "next/image";
+
+export interface CommitteeMember {
+  name: string;
+  affiliation: string;
+  photo?: StaticImageData;
+}
+
+export interface CommitteeGroup {
+  id: string;
+  title: string;
+  members: CommitteeMember[];
+  layout?: "featured" | "grid";
+}
+
+const m = (title: string, name: string): CommitteeMember => ({
+  name: title.trim(),
+  affiliation: name.replace(/^\(|\)$/g, "").trim(),
+});
+
+const webRaw = [{ title: "Pr. Omar Zahour ", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Pr. Sara Ouahabi", name: "(FSBM, Casablanca Morocco)" },];
+
+const coChairRaw = [{ title: "Pr. Sara Ouahabi", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Pr. Soumaya Ounacer", name: "(FSBM, Casablanca Morocco)" },];
+
+const professionalsRaw = [{ title: "Pr. Marzak Abdelaziz", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Pr. Zahour Omar ", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Pr. Ouahabi Sara", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Pr. Ounacer  Soumaya", name: "(FSBM, Casablanca Morocco)" },];
+
+const seniorLocalRaw = [{ title: "PR. AAMRE KHALIL", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. ACHTAICH KHADIJA", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. AHARRANE NABIL", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. AHAJJAM TARIK", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. AIT ABDELOUAHID RACHIDA", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. AIT DAOUD MOHAMED", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. ARDCHIRD SOUFIANE", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. AOUHASSI SARA", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. AZZOUAZI MOHAMED", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. BELANGOUR ABDESSAMAD", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. BENABBOU FAOUZIA", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. BENLAHMAREL HABIB", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. BENTAIB MOHSSINE", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. CHAFIQ TARIK", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. CHEMLAL YMAN", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. DABOUNOU JAOUAD", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. DAIF ABDERRAHMANE", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. EL FILALI SANAA", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. ETTAOUFIK ABDELAZIZ", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. GHANIMI FADOUA", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. GHAZOUANI MOHAMED", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. HAMAL OUSSAMA", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. HANOUNE MOSTAFA", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. KANDALI KHALID", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. KHIATI MUSTAPHA", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. KIKOMBA KAHUNGU MICHAEL", name: "(ISP-Gombe-Kinshasa, Democratic Republic of the Congo)" },
+    { title: "PR. LABRIJI EL HOUSSINE", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. MARZAK ABDELAZIZ", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. MERZOUK SOUKAINA", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. MOUSSAID LAILA", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. NAMIR ABDELWAHED", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. NOUH SAID", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. NOURI ANASS", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. OUFKIR JAMAL", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. OUAHABI SARA", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. OUNACER SOUMAYA", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. RACHDI MOHAMED", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. RGHIOUI ANASS", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. SABIRI KHADIJA", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. SAEL NAWAL", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. SAIF ICHRAK", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. SADIQ MOUNIR", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. SEKHARA YOUSSEF", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. SILKAN HASSAN", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. TABII YOUNESS", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. TRAGHA ABDERRAHIM", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. YOUSFI NOURA", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "PR. ZAHOUR OMAR", name: "(FSBM-UNIVH2C, MOROCCO)" }];
+
+const publiciteRaw = [{ title: "Pr. Sanaa El Filali", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Pr. Soumaya Ounacer ", name: "(FSBM, Casablanca Morocco)" },
+    {
+      title: "Pr. Kikomba Kahungu Michael",
+      name: "( ISP-Gombe-Kinshasa, Democratic Republic of the Congo)",
+    },
+    { title: "Pr. Soukaina Merzouk", name: "(FPS,El Jadida Morocco)" },
+    { title: "Pr. Abderrahmane Daif", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Pr. Mohamed Ait Daoud", name: "(FSBM, Casablanca Morocco)" },
+    {
+      title: "Pr. Rachida Ait Abdelouahid ",
+      name: "(FSBM, Casablanca Morocco)",
+    },
+    { title: "Pr.Mohamed Rachdi", name: "(ENSAD,Casablanca ,Morocco)" },];
+
+const registrationRaw = [{ title: "Pr. Omar Zahour ", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Pr. Abdelaziz Ettaoufik ", name: "(FSBM, Casablanca Morocco)" },
+    {
+      title: "Pr. Bentaib Mohssine",
+      name: " (FSBM, Casablanca Morocco)",
+    },
+    { title: "Pr. Nawal Sael", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Pr. Mohamed Ghazouani", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Pr. Mounir Sadiq", name: "(FSBM, Casablanca Morocco)" },];
+
+const publicationRaw = [{ title: "Pr. Moussaid Laila", name: "(ENSAM, Casablanca Morocco)" },
+    { title: "Pr. Benlahmar El Habib", name: "(FSBM, Casablanca Morocco)" },
+    {
+      title: "Pr. Marzak Abdelaziz  ",
+      name: " (FSBM, Casablanca Morocco)",
+    },
+    { title: "Pr. Omar Zahour ", name: "(FSBM, Casablanca Morocco)" },];
+
+const speakersRaw = [{ title: "Pr. Azouazi Mohamed ", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Pr. Benlahmar El Habib", name: "(FSBM, Casablanca Morocco)" },
+    {
+      title: "Pr. Marzak Abdelaziz  ",
+      name: " (FSBM, Casablanca Morocco)",
+    },
+    { title: "Pr.  Silkan Hassan ", name: "(FS-UNIV-CD ,El Jadida,Morocco)" },
+    { title: "Pr. Benabbou Faouzia ", name: "(FSBM, Casablanca Morocco)" },];
+
+const localRaw = [{ title: "ILyas Farkhane ", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Oumaima Hourrane", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Fatima Zahra Alaoui ", name: "(FSBM, Casablanca Morocco)" },
+    {
+      title: "Laila Eljiani ",
+      name: " (FSBM, Casablanca Morocco)",
+    },
+    { title: "El Yazid Radid ", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Adil Karim", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Safeh nisrine", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Aitlmoudden Othmane", name: "(FSBM, Casablanca Morocco)" },
+
+    { title: "Banou Zouheir", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Bouhlal Meriem ", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Brahim Bella", name: "(FSBM, Casablanca Morocco)" },
+    {
+      title: "Aarika  Kawtar ",
+      name: " (FSBM, Casablanca Morocco)",
+    },
+    { title: "Hafsa Ouchraa", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Abdeljalil Elhassani ", name: "(FSBM, Casablanca Morocco)" },
+
+    { title: "Ibtissame Ezzahoui", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Tarsi mariame", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Amine Dehbi ", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Younes Rachdi ", name: "(FSBM, Casablanca Morocco)" },
+
+    { title: "MIHRAB FADOUA", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Mohamed Akram Lamhour", name: "(FSBM, Casablanca Morocco)" },
+    { title: "Oussama Zemmnazi ", name: "(FSBM, Casablanca Morocco)" },
+    {
+      title: "Sofia Semlali ",
+      name: "( FSK, université Ibn Tofail ,Kénitra ,Maroc)",
+    },
+    { title: "Khaddar El Mahdi", name: "(FSBM CASABLANCA ,Morocco)" },
+    { title: "Salma Aimara", name: "(FSBM CASABLANCA ,Morocco)" },
+    { title: "Zineb ELLAKY", name: "(FSBM CASABLANCA ,Morocco)" },];
+
+const professionals2Raw = [{ title: "Pr. Aamre Khalil", name: "Univ-Lorraine, France" },
+    { title: "Pr. ACHTAICH Khadija", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. ACHTAICH Naceur", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    {
+      title: "Pr. Ait Abdelouahid Rachida ",
+      name: "(FSBM-UNIVH2C, MOROCCO)",
+    },
+    { title: "Pr. Ait Daoud Mohammed", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Ahajjam Tarik", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Anass Rghioui", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Anderson Rocha", name: "(Unicamp, Brazil)" },
+    { title: "Pr. AOUHASSI Sara", name: "(ENSAD-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Ardchird Soufiane", name: "(ENCG-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Ataa Allah Fadoua", name: "(IRCAM, MOROCCO)" },
+    { title: "Pr. Azzouazi Mohamed  ", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    {
+      title: "Pr. Bahaj Mostafa",
+      name: "(ENSA, Ibn Zohr University, Agadir, Morocco)",
+    },
+
+    { title: "Pr. Banane Mouad", name: "(FSJES-UNIVH2C, Morocco)" },
+    { title: "Pr. Ballaoui Hammad", name: "(ISPITS, Laayoune Morocco)" },
+    { title: " Pr. Behja Hicham", name: "(ENSEM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Belangour Abdessamad", name: "(FSBM-UNIVH2C, MOROCCO)" },
+
+    
+    { title: "Pr. Benabbou Faouzia", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Benghazi Akhlaki Kawtar", name: "(Univ Grenade, Espagne)" },
+
+    { title: "Pr. Benlahmar El Habib", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Bentaib Mouhcine", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Bouattane Omar", name: "(ENSAM-UNIVH2C, MOROCCO)" },
+    {
+      title: "Pr. Bouhrma Mohamed",
+      name: "(USTM Nouakchott, Mauritania)",
+    },
+    { title: "Pr. Chemlal Yman", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Daif Abderrahmane", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Dabounou Jaouad", name: "(FST-UNIVH1, MOROCCO)" },
+
+    { title: "Pr. Dandache Abbas", name: "(Univ-Lorraine, France)" },
+    { title: "Pr. Debauche Olivier", name: "(UNIVERSITY OF LIÈGE (BELGIUM))" },
+    {
+      title: "Pr. Diakité Mohamed Lamine",
+      name: "(USTM Nouakchott, Mauritania)",
+    },
+    {
+      title: " Pr. Doukkali Sdigui Abdlaziz",
+      name: "(ENSIAS-UNIVM5, MOROCCO)",
+    },
+    { title: "Pr. Douzi Khadija", name: "(FSTM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. El Adnani Mustapha", name: "(FST-UNIVH2C, MOROCCO)" },
+    { title: "Pr. El Bahi Hassan", name: "(ENCG, UCA,Marrakech, MOROCCO)" },
+    { title: "Pr. El Filali Sanaa", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    {
+      title: "Pr. EL GHOUMARI Mohammed Yassine",
+      name: "(ENCG-UNIVH2C, MOROCCO)",
+    },
+
+    { title: "Pr. El Guemmat Kamal", name: "(ENSET-UNIVH2C, MOROCCO)" },
+    {
+      title: "Pr. El Habouz Youssef",
+      name: "(IGDR - Institute of Genetics and Development of Rennes, Rennes University | France)",
+    },
+    { title: "Pr. El younoussi Yacine", name: "(ENSA-UNIVAE, MOROCCO)" },
+    { title: "Pr. Erraissi Allae", name: "(FPSB-UNIVCD, Morocco)" },
+    { title: "Pr. Ettaoufik Abdelaziz", name: "( FSBM-UNIVH2C, MOROCCO)" },
+    {
+      title: "Pr. Fakir Mohamed",
+      name: "(Sidi Mohamed Ben Abdellah University, Fez, Morocco)",
+    },
+    { title: "Pr. Fabrice Monteiro", name: "(Univ-Lorraine, France)" },
+    { title: "Pr. Ghanimi Fadoua", name: "(ENSC-UNIVIT, MOROCCO)" },
+
+    { title: "Pr. Ghazouani Mohamed", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    {
+      title: "Pr. Gueye Mamadou Lamine",
+      name: "(University De Pau Et Des Pays De L'adour. France)",
+    },
+    { title: "Pr. Hain Mustapha", name: "(ENSAM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Hammal Oussama", name: "(ENA, Marrakech ,Morocco )" },
+    { title: "Pr. Hanoune Mostafa", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Hattaf Khalid", name: "(CRMEF of Casablanca, MOROCCO)" },
+
+    {
+      title: "Pr. Hicham GUEDDAH",
+      name: "(ENS, Mohammed V university, Rabat, MOROCCO)",
+    },
+    { title: "Pr. Hmedna Brahim", name: "(ENCG, UIZ, Agadir, MOROCCO)" },
+    { title: "Pr. Imane Lmati", name: "(FST-UNIVH1, MOROCCO)" },
+    { title: "Pr. Jarir Zahi", name: "(FSS-UNIVCA, MOROCCO)" },
+    { title: "Pr. Jebbar Mustapha", name: "(EST-UNIVH2C, Morocco)" },
+
+    { title: "Pr. Khadija Sabiri", name: "(Senior Researcher at Fraunhofer)" },
+    {
+      title: "Pr. khammal Adil",
+      name: "(AIAC Mohamed VI, Casablanca, Morocco)",
+    },
+    {
+      title: "Pr. Kikomba Kahungu Michael",
+      name: "(ISP-Gombe-Kinshasa, Democratic Republic of the Congo)",
+    },
+    { title: "Pr. Laaz Naziha", name: "(EHTP,Casablanca ,Maroc)" },
+    {
+      title: "Pr. Lachgar Ahmed",
+      name: "(ENSIAS, Mohammed V University in Rabat, Morocco)",
+    },
+    { title: "Pr. Labriji El Houssine", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Lahby Mohamed", name: "(ENS-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Lamiae Demraoui", name: "(FEG, USMS, MOROCCO)" },
+    { title: "Pr. Mahraz Mohamed Adnane", name: "(FSDM-UNIVSMBA, MOROCCO)" },
+    { title: "Pr. Manuel Noguera Gracia", name: "(Univ Grenade, Espagne)" },
+    { title: "Pr. Mansouri Khalifa", name: "(ENSET-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Marzak Abdelaziz", name: "(FSBM-UNIVH2C, MOROCCO)" },
+
+    { title: "Pr. Mbarki Samir", name: "(FS-UNIV IBN TOFAIL, MOROCCO)" },
+    { title: "Pr. Merzouk Soukaina", name: "(FPSB-UNIVUCD, MOROCCO)" },
+    { title: "Pr. Mourchid Mohammed", name: "(FS-UNIV IBN TOFAIL, MOROCCO)" },
+    { title: "Pr. Moussaid Khalid", name: "(FSAC-UNIVH2C, MOROCCO)" },
+
+    { title: "Pr. Moutachaouik Hicham", name: "(ENSAM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Namir Abdelwahed", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    {
+      title: "Pr. Nanne Mohamedade Farouk",
+      name: "(USTM, Nouakchott, Mauritania)",
+    },
+    { title: "Pr. Nassar Mahmoud", name: "(ENSIAS-UNIVM5, MOROCCO)" },
+    { title: "Pr. Naziha Laaz", name: "(EHTP, MOROCCO)" },
+
+    {
+      title: "Pr. Nouri Anas",
+      name: "(FSK-UNIV Ibn Tofail, Kenitra, Morocco)",
+    },
+    { title: "Pr. Nouh Said", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Omary Fouzia", name: "(FSR-UNIVMD5, MOROCCO)" },
+    { title: "Pr. Ouahabi Sara", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    {
+      title: "Pr. Ouahman Abdellah",
+      name: "(FSSM, Cadi Ayyad University, Marrakech, Morocco)",
+    },
+    { title: "Pr. Ounacer Soumaya", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    {
+      title: "Pr. Qjidaa Hassan",
+      name: "( FST, Abdelmalek Essaâdi University, Tangier, Morocco)",
+    },
+    { title: "Pr. Rachdi Mohamed", name: "(ENSAD-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Rachidi Youssef", name: "(EST-Guelmim,UIZ, MOROCCO)" },
+    { title: "Pr. Riffi Jamal", name: "(FSDM-UNIVSMBA, MOROCCO)" },
+    { title: "Pr. Rochd Yassir", name: "(ENSA-UNIVH1, MOROCCO)" },
+
+    { title: "Pr. Rochd Yassir", name: "(ENSA-UNIVH1, MOROCCO)" },
+    { title: "Pr. Saadane Rachid", name: "(EHTP-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Sadiq Abdelalim", name: "(FS-UNIV IBN TOFAIL, MOROCCO)" },
+    { title: "Pr. Sadik Mounir", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Sael Nawal", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Sara Arezki", name: "(FST-UNIVH1, MOROCCO)" },
+    { title: "Pr. Sbai Hanae", name: "(FSTM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Sekhara Youssef", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Silkan Hassan", name: "(FSJ-UNIVCD, MOROCCO)" },
+    { title: "Pr. Tabii Youness", name: "(ENSIAS, UNIV-MEDV ,Rabat)" },
+    { title: "Pr. Tarik CHAFIQ", name: "(FSBM-UNIVH2C, MOROCCO)" },
+
+    { title: "Pr. Tragha Abderrahim", name: "( FSBM-UNIVH2C, MOROCCO)" },
+    {
+      title: "Pr. Yousfi Abderrahim",
+      name: "(Sidi Mohamed Ben Abdellah University, Fez, Morocco)",
+    },
+    { title: "Pr. Yousfi Noura", name: "(FSBM-UNIVH2C, MOROCCO)" },
+    { title: "Pr. Zahour Omar", name: "(FSBM-UNIVH2C, MOROCCO)" },
+
+    { title: "Pr. Zellou Ahmed", name: "(ENSIAS-UNIVM5, MOROCCO)" },];
+
+export const honoraryChair = {
+  title: "Honorary Chairs",
+  lines: ["Dean of Faculty of Sciences", "Ben M'sick"],
+};
+
+export const conferenceChair: CommitteeMember = {
+  name: "Pr. Omar Zahour",
+  affiliation: "FSBM, Casablanca Morocco",
+};
+
+export const committeeGroups: CommitteeGroup[] = [
+  {
+    id: "web",
+    title: "Web Chairs",
+    layout: "featured",
+    members: webRaw.map((x) => m(x.title, x.name)),
+  },
+  {
+    id: "co-chair",
+    title: "Conference Co-Chair",
+    layout: "featured",
+    members: coChairRaw.map((x) => m(x.title, x.name)),
+  },
+  {
+    id: "sponsorship",
+    title: "Sponsorship & Exhibits Chairs",
+    layout: "grid",
+    members: professionalsRaw.map((x) => m(x.title, x.name)),
+  },
+  {
+    id: "local-senior",
+    title: "Organizing Local Committee (Senior)",
+    layout: "grid",
+    members: seniorLocalRaw.map((x) => m(x.title, x.name)),
+  },
+  {
+    id: "publicity",
+    title: "Publicity & Communication Chairs",
+    layout: "grid",
+    members: publiciteRaw.map((x) => m(x.title, x.name)),
+  },
+  {
+    id: "registration",
+    title: "Registration Chairs",
+    layout: "grid",
+    members: registrationRaw.map((x) => m(x.title, x.name)),
+  },
+  {
+    id: "publication",
+    title: "Publication Chairs",
+    layout: "grid",
+    members: publicationRaw.map((x) => m(x.title, x.name)),
+  },
+  {
+    id: "session-chairs",
+    title: "Speakers Session Chairs",
+    layout: "grid",
+    members: speakersRaw.map((x) => m(x.title, x.name)),
+  },
+  {
+    id: "local-junior",
+    title: "Organizing Local Committee (Juniors)",
+    layout: "grid",
+    members: localRaw.map((x) => m(x.title, x.name)),
+  },
+  {
+    id: "scientific",
+    title: "Scientific Committee",
+    layout: "grid",
+    members: professionals2Raw.map((x) => m(x.title, x.name)),
+  },
+];

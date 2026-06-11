@@ -1,10 +1,9 @@
-import HeaderTwo from "../../layout/headers/header-2";
 import HeroHomeTwo from "./HeroHomeTwo";
 import DomainSearchHomeTwo from "./DomainSearchHomeTwo";
 import CoreFeaturesHomeTwo from "./CoreFeaturesHomeTwo";
 import ServicesHomeOne from "../home/ServicesHomeOne";
 import PricingHomeTwo from "./PricingHomeTwo";
-import Gallery from "../../login/LoginArea";
+import { GallerySection } from "../../gallery";
 import ChoseAreaHomeOne from "../home/ChoseAreaHomeOne";
 import TestimonailHomeOne from "../home/TestimonailHomeOne";
 import NewsFeedHomeOne from "../home/NewsFeedHomeOne";
@@ -16,13 +15,12 @@ import Team from "../../team/TeamArea";
 const HomeTwo = () => {
   return (
     <>
-      <HeaderTwo style={false} />
+      <HeroHomeTwo />
       <main>
-        <HeroHomeTwo />
         <ChoseAreaHomeOne />
         <FAQHomeOne />
         <Team />
-        <Gallery />
+        <GallerySection />
         <BrandHomeOne />
       </main>
       <FooterTwo />

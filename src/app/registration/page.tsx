@@ -1,11 +1,13 @@
-import Server from "../../../components/server";
+import { RegistrationPage } from "../../../components/registration";
+import FooterTwo from "../../../components/layout/footers/FooterTwo";
 
-const index = () => {
+const Registration = () => {
   return (
     <>
-      <Server />
+      <RegistrationPage />
+      <FooterTwo />
     </>
   );
 };
 
-export default index;
+export default Registration;

@@ -6,14 +6,11 @@ import TestimonailHomeOne from "../homes/home/TestimonailHomeOne";
 import CoreFeatures from "../hosting/CoreFeatures";
 import PriceArea from "../hosting/PriceArea";
 import FooterOne from "../layout/footers/FooterOne";
-import HeaderTwo from "../layout/headers/header-2"; 
 
 
 const DomainSearch = () => {
     return (
-        <>
-            <HeaderTwo style={true} />
-            <main>
+        <>            <main>
                 <Breadcrumb top_title="Search Domain"  title="Domain Search" />
                 <DomainSearchBox style={true}  />
                 <ChoseAreaHomeOne />
