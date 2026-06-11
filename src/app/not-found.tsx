@@ -13,7 +13,7 @@ const Error = () => {
         <div className="pt-95 pb-95 text-center">
           <h3>404 page not found!</h3>
           <Link href={"/"}>
-            <button className="btn error-btn">Go To Home</button>
+            <button className="btn error-btn">Go To Home !</button>
           </Link>
         </div>
       </main>
